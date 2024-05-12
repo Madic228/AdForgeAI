@@ -1,0 +1,6 @@
+2024-05-12 17:03:52,487 - DEBUG - [connectionpool.py:1055] - Starting new HTTPS connection (1): pypi.org:443
+2024-05-12 17:03:57,375 - DEBUG - [connectionpool.py:549] - https://pypi.org:443 "GET /pypi/g4f/json HTTP/1.1" 200 62061
+2024-05-12 17:03:58,865 - DEBUG - [connectionpool.py:1055] - Starting new HTTPS connection (1): chat.vercel.ai:443
+2024-05-12 17:04:02,754 - DEBUG - [connectionpool.py:549] - https://chat.vercel.ai:443 "GET /openai.jpeg HTTP/1.1" 404 None
+2024-05-12 17:04:09,329 - DEBUG - [connectionpool.py:1055] - Starting new HTTPS connection (1): chat.vercel.ai:443
+2024-05-12 17:04:10,079 - DEBUG - [connectionpool.py:549] - https://chat.vercel.ai:443 "GET /openai.jpeg HTTP/1.1" 404 None

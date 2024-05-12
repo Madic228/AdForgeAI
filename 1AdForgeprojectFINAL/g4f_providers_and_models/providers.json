@@ -1,0 +1,500 @@
+{
+    "AItianhu": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "AItianhuSpace": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Acytoo": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "AiAsk": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "AiChatOnline": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "AiService": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Aibn": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Aichat": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Aichatos": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Ails": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Aivvm": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": true
+    },
+    "AsyncGeneratorProvider": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "AsyncProvider": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Aura": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Bard": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "BaseProvider": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Berlin": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Bestim": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Bing": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": true
+    },
+    "BingCreateImages": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Blackbox": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "ChatAnywhere": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "ChatBase": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "ChatForAi": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Chatgpt4Online": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "ChatgptAi": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": [
+            true
+        ]
+    },
+    "ChatgptDemo": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "ChatgptDemoAi": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "ChatgptDuo": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "ChatgptFree": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "ChatgptLogin": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "ChatgptNext": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "ChatgptX": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Chatxyz": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Cnote": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "CodeLinkAva": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Cohere": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "CreateImagesProvider": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Cromicle": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "DeepInfra": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "DeepInfraImage": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "DfeHub": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "DuckDuckGo": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "EasyChat": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Ecosia": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Equing": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "FakeGpt": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "FastGpt": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Feedough": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "FlowGpt": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Forefront": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "FreeChatgpt": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "FreeGpt": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "GPTalk": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "GeekGpt": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": true
+    },
+    "Gemini": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "GeminiPro": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "GeminiProChat": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "GetGpt": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "GigaChat": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Gpt6": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "GptChatly": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "GptForLove": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "GptGo": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "GptGod": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "GptTalkRu": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Groq": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "H2o": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Hashnode": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "HuggingChat": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "HuggingFace": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "IterProvider": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Koala": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Liaobots": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": true
+    },
+    "Llama": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Local": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Lockchat": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": true
+    },
+    "MetaAI": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "MetaAIAccount": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "MyShell": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Myshell": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": true
+    },
+    "Ollama": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "OnlineGpt": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Opchatgpts": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "OpenAssistant": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "OpenRouter": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Openai": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "OpenaiAccount": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": true
+    },
+    "OpenaiChat": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": true
+    },
+    "PerplexityAi": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "PerplexityLabs": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Phind": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": true
+    },
+    "Pi": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Poe": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "ProviderType": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "ProviderUtils": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Raycast": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": true
+    },
+    "Reka": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Replicate": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "ReplicateImage": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "RetryProvider": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "TalkAi": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Theb": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": true
+    },
+    "ThebApi": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "V50": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Vercel": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Vitalentum": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Wewordle": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "WhiteRabbitNeo": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "Wuguokai": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "Ylokh": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "You": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": true
+    },
+    "Yqcloud": {
+        "supports_gpt_35": true,
+        "supports_gpt_4": false
+    },
+    "annotations": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "base_provider": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "bing": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "deprecated": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "helper": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "needs_auth": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "not_working": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "openai": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "selenium": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "sys": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    },
+    "you": {
+        "supports_gpt_35": false,
+        "supports_gpt_4": false
+    }
+}

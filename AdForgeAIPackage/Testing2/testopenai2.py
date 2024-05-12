@@ -1,47 +1,36 @@
 import openai
 import json
 import os
+import requests
 
-# os.environ["HTTP_PROXY"] = "http://134.122.73.206:7890"
-# os.environ["HTTPS_PROXY"] = "http://128.140.51.69:18"
-
-
-import os
-
-
-
-import asyncio
-import platform
-
-if platform.system() == 'Windows':
-    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-
-os.environ["G4F_PROXY"] = "http://gkodmrwtb:fOqettKDvWrA@193.233.164.83:62970"
 # Получение API-ключа
 def get_api_key():
     # Реализуйте эту функцию в соответствии с вашими актуальными данными
-    openai_key_file = 'envs/openai_key.json'
+    openai_key_file = 'Bearer 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'
     with open(openai_key_file, 'r', encoding='utf-8') as f:
         openai_key = json.loads(f.read())
     return openai_key['api']
 
-
-openai.api_key = get_api_key()
-
+openai.api_key = 'Bearer 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'
 
 class ChatGPT:
-    def __init__(self):
+    def __init__(self, proxy=None):
         self.chat_history = []
+        self.proxy = proxy
 
     def ask_gpt(self, question):
         # Добавляем в историю чатов текущий вопрос пользователя
         self.chat_history.append({"role": "user", "content": question})
 
+        # Настройка параметров прокси для запроса
+        proxies = self.proxy if self.proxy else {}
+
         # Вызываем API для получения ответа
         response = openai.Completion.create(
             engine="text-davinci-002",
             prompt=self.format_chat_history(),
-            max_tokens=150
+            max_tokens=150,
+            proxies=proxies  # Передача параметров прокси
         )
 
         # Добавляем ответ в историю чатов
@@ -58,7 +47,12 @@ class ChatGPT:
 
 
 def main():
-    chat = ChatGPT()
+    # Укажите свой прокси-сервер
+    proxy = {
+        "http": "http://gkodmrwtb:fOqettKDvWrA@193.233.164.83:62970",
+        # Добавьте аналогичные настройки для HTTPS, если это необходимо
+    }
+    chat = ChatGPT(proxy=proxy)
 
     while True:
         user_input = input("You: ")
@@ -73,7 +67,6 @@ def main():
 
         # Вывод ответа ассистента
         print(f"ChatGPT: {response.choices[0].text.strip()}")
-
 
 if __name__ == '__main__':
     main()
