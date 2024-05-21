@@ -5,37 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/1AdForgeprojectFINAL/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/g4f_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/test_providers_and_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1AdForgeprojectFINAL/main_logic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2AdForge/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2AdForge/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2AdForge/testing/AccessTest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2AdForge/testing/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2AdForge/testing/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2AdForge/testing/test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2AdForge/testing/test3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdForgeAIPackage/Testing2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdForgeAIPackage/Testing2/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdForgeAIPackage/Testing2/testopenai.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdForgeAIPackage/Testing2/testopenai2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdForgeAIPackage/TestingPackage110524/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdForgeAIPackage/TestingPackage110524/maintest1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdForgeAIPackage/TestingPackage110524/test2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdForgeAIPackage/testin120224/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdForgeAIPackage/testin120224/test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/ad_editor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/ad_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/ad_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test 200524/MyProviders/HuggingChat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test 200524/MyProviders/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test 200524/MyProviders/maintest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test 200524/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test 200524/test1/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test 200524/test1/providers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test 200524/test1/test2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/CreatingAdAI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CreatingAdAI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdForgeAIPackage/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectPackage/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectPackage/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectPackage/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectPackage/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/g4f.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/g4f_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/models.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/providers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/test_providers_and_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/working_providers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/main_logic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/models.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/providers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/g4f.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/testing/AccessTest/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/testing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/testing/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/testing/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2AdForge/testing/test3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/Testing2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/Testing2/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/Testing2/testopenai.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/Testing2/testopenai2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/TestingPackage110524/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/TestingPackage110524/maintest1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/TestingPackage110524/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/testin120224/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/testin120224/g4f.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/testin120224/test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectPackage/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectPackage/envs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectPackage/envs/openai_key.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectPackage/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectPackage/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectPackage/test2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,34 +100,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.You.executor": "Run",
-    "Python.__init__ (1).executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python.access2.executor": "Run",
-    "Python.access3.executor": "Run",
-    "Python.g4f_utils.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.main_logic.executor": "Run",
-    "Python.maintest1.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.test1.executor": "Run",
-    "Python.test2 (1).executor": "Run",
-    "Python.test2.executor": "Run",
-    "Python.test3.executor": "Run",
-    "Python.test_providers_and_models.executor": "Run",
-    "Python.testopenai.executor": "Run",
-    "Python.testopenai2.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.HuggingChat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.You.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__ (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.access1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.access2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.access3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.access4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.access5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.g4f_utils.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_claude.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_logic.executor&quot;: &quot;Run&quot;,
+    &quot;Python.maintest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.maintest1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test2 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.test2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_providers_and_models.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testopenai.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testopenai2.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.access2">
-    <configuration name="You" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="HuggingChat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CreatingAdAI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,11 +142,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/Lib/site-packages/g4f/Provider" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test 200524/MyProviders" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Lib/site-packages/g4f/Provider/You.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test 200524/MyProviders/HuggingChat.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,11 +164,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2AdForge/testing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test 200524" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2AdForge/testing/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test 200524/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,7 +177,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="access2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CreatingAdAI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,11 +186,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2AdForge/testing/AccessTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackage" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2AdForge/testing/AccessTest/access2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,7 +199,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="access3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="maintest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CreatingAdAI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -175,11 +208,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2AdForge/testing/AccessTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test 200524/MyProviders" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2AdForge/testing/AccessTest/access3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test 200524/MyProviders/maintest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,7 +221,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CreatingAdAI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,11 +230,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2AdForge/testing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test 200524/test1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2AdForge/testing/test3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test 200524/test1/test2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -212,18 +245,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.access2" />
-        <item itemvalue="Python.access3" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.maintest" />
+        <item itemvalue="Python.HuggingChat" />
         <item itemvalue="Python.__init__ (1)" />
-        <item itemvalue="Python.You" />
-        <item itemvalue="Python.test3" />
+        <item itemvalue="Python.test2" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
       </set>
     </attachedChunks>
   </component>
@@ -237,5 +270,16 @@
       <updated>1714626424967</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
