@@ -76,6 +76,8 @@ async def main():
                         ad_manager.temperature = ads[ad_index]['temperature']
                         ad_manager.stream = ads[ad_index]['stream']
 
+                        ad_manager.initialize_generator()
+
                         edit = input("Хотите отредактировать объявление? (да/нет): ").strip().lower()
                         if edit == 'да':
                             editor = AdEditor(ad_manager.ad_text, ad_manager)

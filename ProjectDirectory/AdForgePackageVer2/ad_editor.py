@@ -30,7 +30,8 @@ class AdEditor:
                 print("4: NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO")
                 print("5: green")
                 model_choice = int(input("Введите номер модели: "))
-                self.ad_manager.model_name, self.ad_manager.provider = self.ad_manager.get_model_name_and_provider(model_choice)
+                self.ad_manager.model_name, self.ad_manager.provider = self.ad_manager.get_model_name_and_provider(
+                    model_choice)
             elif choice == 2:
                 stream_choice = input("Выберите режим потоковой обработки (1: Вкл, 2: Выкл): ")
                 self.ad_manager.stream = stream_choice == '1'
@@ -48,9 +49,11 @@ class AdEditor:
                     self.ad_text = await self.ad_manager.generate_ad_with_edit(old_ad_text, edit_instructions_str)
                     ads = self.ad_manager.load_ad_version_from_json()
                     if ads:
-                        last_ad_index = len(ads) - 1
-                        ads[last_ad_index]["version"] += 1
-                        self.ad_manager.save_ad_to_json(self.ad_text, ads[last_ad_index]["version"], last_ad_index)
+                        for ad in ads:
+                            if ad["headline"] == self.ad_manager.headline and ad["audience"] == self.ad_manager.audience:
+                                new_version = ad["version"] + 1
+                                self.ad_manager.save_ad_to_json(self.ad_text, new_version, ads.index(ad))
+                                break
                     else:
                         new_version = 1
                         self.ad_manager.save_ad_to_json(self.ad_text, new_version, 0)
@@ -60,9 +63,11 @@ class AdEditor:
                     self.ad_text = await self.ad_manager.generate_ad()
                     ads = self.ad_manager.load_ad_version_from_json()
                     if ads:
-                        last_ad_index = len(ads) - 1
-                        new_version = ads[last_ad_index]["version"] + 1
-                        self.ad_manager.save_ad_to_json(self.ad_text, new_version, last_ad_index + 1)
+                        for ad in ads:
+                            if ad["headline"] == self.ad_manager.headline and ad["audience"] == self.ad_manager.audience:
+                                new_version = ad["version"] + 1
+                                self.ad_manager.save_ad_to_json(self.ad_text, new_version, ads.index(ad))
+                                break
                     else:
                         new_version = 1
                         self.ad_manager.save_ad_to_json(self.ad_text, new_version, 0)
