@@ -186,6 +186,12 @@ class AdManager:
         try:
             with open('ad_data.json', 'r', encoding='utf-8') as f:
                 data = json.load(f)
+            # Инициализация AdGenerator с правильными значениями из JSON
+            for ad in data:
+                self.model_name = ad['model_name']
+                self.provider = getattr(g4f.Provider, ad['provider'])
+                self.generator = AdGenerator(model_name=self.model_name, provider=self.provider, proxies=self.proxies)
+                self.initialize_generator()
             return data
         except FileNotFoundError:
             return []
