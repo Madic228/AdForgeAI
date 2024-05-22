@@ -50,18 +50,27 @@ border-style:solid;
 
 #settingBtn, #logoutBtn{
 border-style:solid;
+}
 
+ #generationListTxt{
+background-color: #23252B;
 }
 
 #optionsTxt, #advSetTxt, #tempTxt, #tempResTxt {
 background-color:#282C34;
 }
 
-#clearBtn, #generationBtn {
+#clearBtn, #generationBtn, #newGenerationBtn {
 background-color: #28F1A9;
 border-style: solid;
 border-radius: 10px;
 color: #000;
+}
+
+#deleteGenBtn{
+background-color: #E93131;
+border-style: solid;
+border-radius: 10px;
 }
 
 #droparrowBtn{
@@ -73,10 +82,15 @@ background-color: #23252B;
 background-color: #23252B;
 }
 
-#headlineEdit, #audienceEdit, #keyEdit, #actionEdit, #styleBox, #lengthEdit{
+#headlineEdit, #audienceEdit, #keyEdit, #actionEdit, #styleBox, #styleBox_2, #styleBox_3, #lengthEdit{
 border-style:solid;
 border-width:1px;
 border-color:#494949;
+}
+
+#infBtn, #infBtn_2, #infBtn_3{
+background-color:#282C34;
+border-style:solid;
 }
 
 </string>
@@ -209,7 +223,7 @@ border-color:#494949;
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>290</y>
+      <y>490</y>
       <width>171</width>
       <height>221</height>
      </rect>
@@ -392,7 +406,7 @@ border-color:#494949;
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../images/up-arrow.png</normaloff>../images/up-arrow.png</iconset>
+      <normaloff>../images/down-arrow.png</normaloff>../images/down-arrow.png</iconset>
     </property>
     <property name="checkable">
      <bool>false</bool>
@@ -431,6 +445,66 @@ border-color:#494949;
     </property>
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="newGenerationBtn">
+    <property name="geometry">
+     <rect>
+      <x>515</x>
+      <y>30</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Новое объявление</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="generationListTxt">
+    <property name="geometry">
+     <rect>
+      <x>515</x>
+      <y>100</y>
+      <width>170</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Список объявлений</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteGenBtn">
+    <property name="geometry">
+     <rect>
+      <x>515</x>
+      <y>640</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Удалить все объявления</string>
     </property>
    </widget>
   </widget>
@@ -650,7 +724,7 @@ border-color:#494949;
      </rect>
     </property>
     <property name="toolTip">
-     <string>Выберите стиль объявления</string>
+     <string/>
     </property>
     <property name="whatsThis">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -694,7 +768,7 @@ font-size:12px;
      </rect>
     </property>
     <property name="toolTip">
-     <string>Выберите модель ИИ</string>
+     <string/>
     </property>
     <property name="whatsThis">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -719,27 +793,22 @@ font-size:12px;
     </item>
     <item>
      <property name="text">
-      <string>gpt-4-turbo</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>gpt-4</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
       <string>google/gemma-1.1-7b-it</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>gemini-1-5-pro</string>
+      <string>claude-3</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>gemini-pro</string>
+      <string>NousResearch</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>green</string>
      </property>
     </item>
    </widget>
@@ -753,7 +822,7 @@ font-size:12px;
      </rect>
     </property>
     <property name="toolTip">
-     <string>Потоковая обработка</string>
+     <string/>
     </property>
     <property name="whatsThis">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -846,8 +915,8 @@ QSlider::groove:horizontal {
    <widget class="QLabel" name="tempResTxt">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>474</y>
+      <x>380</x>
+      <y>472</y>
       <width>21</width>
       <height>16</height>
      </rect>
@@ -856,8 +925,173 @@ QSlider::groove:horizontal {
      <string>0.0</string>
     </property>
    </widget>
+   <widget class="QToolButton" name="infBtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>272</y>
+      <width>27</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Указывается стиль объявления</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolTip{
+color: black;
+background-color:white;
+font-size:12px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../AdForgeUI/images/info.png</normaloff>../../../../AdForgeUI/images/info.png</iconset>
+    </property>
+    <property name="autoRaise">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="infBtn_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>432</y>
+      <width>27</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Указывается модель ИИ, которая будет генерировать объявление</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolTip{
+color: black;
+background-color:white;
+font-size:12px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../AdForgeUI/images/info.png</normaloff>../../../../AdForgeUI/images/info.png</iconset>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="infBtn_3">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>432</y>
+      <width>27</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Указывается наличие потоковой обработка</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolTip{
+color: black;
+background-color:white;
+font-size:12px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../AdForgeUI/images/info.png</normaloff>../../../../AdForgeUI/images/info.png</iconset>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>clearBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>headlineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>457</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>audienceEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>457</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>keyEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>429</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>actionEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>485</x>
+     <y>261</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>485</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>lengthEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>256</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>457</x>
+     <y>574</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
