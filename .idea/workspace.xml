@@ -4,65 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/ad_editor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/ad_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/ad_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test 200524/MyProviders/HuggingChat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test 200524/MyProviders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test 200524/MyProviders/maintest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test 200524/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test 200524/test1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test 200524/test1/providers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test 200524/test1/test2.py" afterDir="false" />
+    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Удаление старых папок и тестириуемых скриптов">
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_editor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/CreatingAdAI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CreatingAdAI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/g4f.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/g4f_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/models.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/providers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/test_providers_and_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/g4f_providers_and_models/working_providers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/main_logic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/models.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1AdForgeprojectFINAL/providers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/g4f.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/testing/AccessTest/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access4.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/testing/AccessTest/access5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/testing/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/testing/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/testing/test2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2AdForge/testing/test3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/Testing2/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/Testing2/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/Testing2/testopenai.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/Testing2/testopenai2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/TestingPackage110524/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/TestingPackage110524/maintest1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/TestingPackage110524/test2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/testin120224/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/testin120224/g4f.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeAIPackage/testin120224/test1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectPackage/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectPackage/envs/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectPackage/envs/openai_key.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectPackage/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectPackage/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectPackage/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,39 +52,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.HuggingChat.executor&quot;: &quot;Run&quot;,
-    &quot;Python.You.executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__ (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.access1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.access2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.access3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.access4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.access5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.g4f_utils.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main_claude.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main_logic.executor&quot;: &quot;Run&quot;,
-    &quot;Python.maintest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.maintest1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test2 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.test2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_providers_and_models.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testopenai.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testopenai2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.HuggingChat.executor": "Run",
+    "Python.You.executor": "Run",
+    "Python.__init__ (1).executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.access1.executor": "Run",
+    "Python.access2.executor": "Run",
+    "Python.access3.executor": "Run",
+    "Python.access4.executor": "Run",
+    "Python.access5.executor": "Run",
+    "Python.g4f_utils.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main (2).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.main_claude.executor": "Run",
+    "Python.main_logic.executor": "Run",
+    "Python.maintest.executor": "Run",
+    "Python.maintest1.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.test1.executor": "Run",
+    "Python.test2 (1).executor": "Run",
+    "Python.test2.executor": "Run",
+    "Python.test3.executor": "Run",
+    "Python.test_providers_and_models.executor": "Run",
+    "Python.testopenai.executor": "Run",
+    "Python.testopenai2.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory/AdForgePackageVer2",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Python.main">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory\AdForgePackageVer2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main (2)">
     <configuration name="HuggingChat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CreatingAdAI" />
       <option name="ENV_FILES" value="" />
@@ -155,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CreatingAdAI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,11 +123,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test 200524" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdForgeUI" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test 200524/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdForgeUI/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CreatingAdAI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,35 +202,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="CreatingAdAI" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test 200524/test1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test 200524/test1/test2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.maintest" />
         <item itemvalue="Python.HuggingChat" />
-        <item itemvalue="Python.__init__ (1)" />
-        <item itemvalue="Python.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -269,6 +228,15 @@
       <option name="presentableId" value="Default" />
       <updated>1714626424967</updated>
     </task>
+    <task id="LOCAL-00001" summary="Удаление старых папок и тестириуемых скриптов">
+      <option name="closed" value="true" />
+      <created>1716286648792</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716286648792</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,5 +249,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Удаление старых папок и тестириуемых скриптов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Удаление старых папок и тестириуемых скриптов" />
   </component>
 </project>
