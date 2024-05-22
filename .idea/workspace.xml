@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Удаление старых папок и тестириуемых скриптов">
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_editor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CreatingAdAI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CreatingAdAI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Добавление логики для изменения объявления + запись в Json ver2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_editor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_editor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716286648792</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавление логики для изменения объявления + запись в Json ver2">
+      <option name="closed" value="true" />
+      <created>1716369806695</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716369806695</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,6 +255,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Удаление старых папок и тестириуемых скриптов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Удаление старых папок и тестириуемых скриптов" />
+    <MESSAGE value="Добавление логики для изменения объявления + запись в Json ver2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление логики для изменения объявления + запись в Json ver2" />
   </component>
 </project>

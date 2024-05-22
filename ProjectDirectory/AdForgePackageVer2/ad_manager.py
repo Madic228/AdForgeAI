@@ -14,7 +14,7 @@ class AdGenerator:
         system_message = {
             "role": "system",
             "content": "Вы профессионал в создании рекламных объявлений. Ваша задача - создавать высококачественные рекламные объявления, соответствующие заданным параметрам."
-                       " Вы пишите объявления без использования эмодзи, делеатее структурирована, с красивым форматированием. По всем стандартам. Абзацев должно быть несколько, текст должен быть со всеми возможными переносами."
+                       " Вы пишите объявления без использования эмодзи, делаете их структурированными, с красивым форматированием. По всем стандартам. Абзацев должно быть несколько, текст должен быть со всеми возможными переносами."
         }
         prompt = f"Заголовок объявления: {headline}\nЦелевая аудитория: {audience}\n"
         if key_benefits:
@@ -26,7 +26,7 @@ class AdGenerator:
         if length_limit:
             prompt += f"Желаемый размер объявления в символах: {length_limit}\n"
 
-        setting = "Вывод должен содержать только текст объявления и ничего больше. При упоминание личных данных всегда добавляй [] и в них пиши что пользователю нужно вписать."
+        setting = "Вывод должен содержать только текст объявления и ничего больше. При упоминании личных данных всегда добавляй [] и в них пиши, что пользователю нужно вписать."
 
         user_message = {"role": "user", "content": prompt + setting}
         messages = [system_message, user_message]
@@ -61,7 +61,7 @@ class AdManager:
         self.style = ""
         self.length_limit = None
         self.model_name = 'gpt-3.5-turbo-0125'
-        self.provider = g4f.Provider.DuckDuckGo
+        self.provider = g4f.Provider.Ecosia
         self.temperature = 0.7
         self.stream = False
 
@@ -83,7 +83,7 @@ class AdManager:
         self.generator = AdGenerator(model_name=self.model_name, provider=self.provider, proxies=self.proxies)
 
     def get_model_name_and_provider(self, choice):
-        return model_provider_map.get(choice, ('gpt-3.5-turbo-0125', g4f.Provider.DuckDuckGo))
+        return model_provider_map.get(choice, ('gpt-3.5-turbo-0125', g4f.Provider.Ecosia))
 
     async def generate_ad(self):
         ad_text = await self.generator.generate_ad(
@@ -102,7 +102,7 @@ class AdManager:
     async def generate_ad_with_edit(self, old_ad_text, edit_instructions):
         system_message = {
             "role": "system",
-            "content": "Вы профессионал в создании рекламных объявлений. Ваша задача - редактировать предоставленные объявления в соответствии с новыми критериями. В ответе вы долнжы дать только текст объявления."
+            "content": "Вы профессионал в создании рекламных объявлений. Ваша задача - редактировать предоставленные объявления в соответствии с новыми критериями. В ответе вы должны дать только текст объявления."
         }
         user_message = {"role": "user", "content": f"Старое объявление: {old_ad_text}\n\nКритерии редактирования: {edit_instructions}"}
         messages = [system_message, user_message]
