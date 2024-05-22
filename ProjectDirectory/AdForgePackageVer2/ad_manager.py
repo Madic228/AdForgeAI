@@ -154,10 +154,25 @@ class AdManager:
         except FileNotFoundError:
             data = []
 
-        if ad_index is not None and 0 <= ad_index < len(data):  # Проверка индекса
-            data[ad_index] = ad_data  # Обновление существующего объявления
-        else:
-            data.append(ad_data)  # Добавление нового объявления
+        # Найти объявление с таким же заголовком и аудиторией
+        ad_exists = False
+        for ad in data:
+            if ad["headline"] == self.headline and ad["audience"] == self.audience:
+                ad["version"] = version
+                ad["creation_date"] = ad_data["creation_date"]
+                ad["key_benefits"] = ad_data["key_benefits"]
+                ad["call_to_action"] = ad_data["call_to_action"]
+                ad["style"] = ad_data["style"]
+                ad["length_limit"] = ad_data["length_limit"]
+                ad["model_name"] = ad_data["model_name"]
+                ad["temperature"] = ad_data["temperature"]
+                ad["stream"] = ad_data["stream"]
+                ad["ad_text"] = ad_data["ad_text"]
+                ad_exists = True
+                break
+
+        if not ad_exists:
+            data.append(ad_data)
 
         with open('ad_data.json', 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
