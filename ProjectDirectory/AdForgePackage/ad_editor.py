@@ -1,52 +1,64 @@
-class AdEditor:
-    def __init__(self, ad_text):
-        self.ad_text = ad_text
+from ad_manager import AdManager
 
-    def edit_ad(self):
+class AdEditor:
+    def __init__(self, ad_text, ad_manager):
+        self.ad_text = ad_text
+        self.ad_manager = ad_manager
+        self.edit_instructions = []
+
+    async def edit_ad(self):
         while True:
             print("\nТекущее объявление:\n", self.ad_text)
+            print("\nТекущие параметры:")
+            print(f"Модель: {self.ad_manager.model_name}")
+            print(f"Потоковая обработка: {'Вкл' if self.ad_manager.stream else 'Выкл'}")
+            print(f"Температура: {self.ad_manager.temperature}")
             print("\nЧто вы хотите изменить?")
-            print("1: Заголовок объявления")
-            print("2: Целевую аудиторию")
-            print("3: Ключевые преимущества")
-            print("4: Призыв к действию")
-            print("5: Стиль объявления")
-            print("6: Ограничения на длину слов")
-            print("7: Произвольные изменения")
-            print("8: Закончить редактирование")
+            print("1: Модель")
+            print("2: Потоковая обработка")
+            print("3: Температура")
+            print("4: Произвольные изменения")
+            print("5: Применить изменения и сгенерировать новое объявление")
+            print("6: Завершить редактирование")
             choice = int(input("Введите номер параметра: "))
 
             if choice == 1:
-                new_headline = input("Введите новый заголовок объявления: ")
-                self.ad_text = self._replace_param("Заголовок объявления", new_headline)
+                print("Выберите модель:")
+                print("1: gpt-3.5-turbo-0125")
+                print("2: claude-3-haiku-20240307")
+                print("3: google/gemma-1.1-7b-it")
+                print("4: NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO")
+                print("5: green")
+                model_choice = int(input("Введите номер модели: "))
+                self.ad_manager.model_name, self.ad_manager.provider = self.ad_manager.get_model_name_and_provider(model_choice)
+                # self.edit_instructions.append(f"Измените модель на: {self.ad_manager.model_name}")
             elif choice == 2:
-                new_audience = input("Введите новую целевую аудиторию: ")
-                self.ad_text = self._replace_param("Целевая аудитория", new_audience)
+                stream_choice = input("Выберите режим потоковой обработки (1: Вкл, 2: Выкл): ")
+                self.ad_manager.stream = stream_choice == '1'
+                # self.edit_instructions.append(f"Измените потоковую обработку на: {'Вкл' if self.ad_manager.stream else 'Выкл'}")
             elif choice == 3:
-                new_key_benefits = input("Введите новые ключевые преимущества: ")
-                self.ad_text = self._replace_param("Ключевые преимущества", new_key_benefits)
+                new_temperature = float(input("Введите новое значение температуры (0-1): "))
+                self.ad_manager.temperature = new_temperature
+                # self.edit_instructions.append(f"Измените температуру на: {new_temperature}")
             elif choice == 4:
-                new_call_to_action = input("Введите новый призыв к действию: ")
-                self.ad_text = self._replace_param("Призыв к действию", new_call_to_action)
+                arbitrary_change = input("Введите произвольное изменение: ")
+                self.edit_instructions.append(arbitrary_change)
             elif choice == 5:
-                new_style = input("Введите новый стиль объявления: ")
-                self.ad_text = self._replace_param("Стиль объявления", new_style)
-            elif choice == 6:
-                new_length_limit = input("Введите новые ограничения на длину слов: ")
-                self.ad_text = self._replace_param("Желаемый размер объявления в символах", new_length_limit)
-            elif choice == 7:
-                arbitrary_change = input("Введите произвольное изменение (например, 'добавить текст в конец'): ")
-                self.ad_text += f"\n{arbitrary_change}"
-            elif choice == 8:
+                if self.edit_instructions:  # Проверка на произвольные изменения
+                    # Генерация нового объявления с изменениями
+                    old_ad_text = self.ad_text
+                    edit_instructions_str = "\n".join(self.edit_instructions)
+                    self.ad_text = await self.ad_manager.generate_ad_with_edit(old_ad_text, edit_instructions_str)
+                    version = self.ad_manager.load_ad_version_from_json()
+                    version += 1
+                    self.ad_manager.save_ad_to_json(self.ad_text, version)
+                    print("\nОбновленное объявление:\n", self.ad_text)
+                    self.edit_instructions = []  # Очистка списка инструкций
+                else:  # Генерация нового объявления с новыми параметрами
+                    self.ad_text = await self.ad_manager.generate_ad()
+                    version = self.ad_manager.load_ad_version_from_json()
+                    version += 1
+                    self.ad_manager.save_ad_to_json(self.ad_text, version)
+                    print("\nОбновленное объявление:\n", self.ad_text)
+            elif choice == 6:  # Завершение редактирования
                 break
-
-        print("\nОбновленное объявление:\n", self.ad_text)
-
-    def _replace_param(self, param_name, new_value):
-        start_idx = self.ad_text.find(param_name)
-        if start_idx == -1:
-            return self.ad_text
-        end_idx = self.ad_text.find("\n", start_idx)
-        if end_idx == -1:
-            return self.ad_text[:start_idx] + f"{param_name}: {new_value}"
-        return self.ad_text[:start_idx] + f"{param_name}: {new_value}" + self.ad_text[end_idx:]

@@ -26,7 +26,7 @@ class AdGenerator:
         if length_limit:
             prompt += f"Желаемый размер объявления в символах: {length_limit}\n"
 
-        setting = "Вывод должен содержать только текст объявления и ничего больше. При упоминании личных данных всегда добавляй [] и в них пиши, что пользователю нужно вписать."
+        setting = "Вывод должен содержать только текст объявления и ничего больше Не используй эмодзи и юникод. При упоминании личных данных всегда добавляй [] и в них пиши, что пользователю нужно вписать."
 
         user_message = {"role": "user", "content": prompt + setting}
         messages = [system_message, user_message]
@@ -102,7 +102,7 @@ class AdManager:
     async def generate_ad_with_edit(self, old_ad_text, edit_instructions):
         system_message = {
             "role": "system",
-            "content": "Вы профессионал в создании рекламных объявлений. Ваша задача - редактировать предоставленные объявления в соответствии с новыми критериями. В ответе вы должны дать только текст объявления."
+            "content": "Вы профессионал в создании рекламных объявлений. Ваша задача - редактировать предоставленные объявления в соответствии с новыми критериями. В ответе вы должны дать только текст объявления. Ты не используешь эмодзи и юникод при генерации объявления."
         }
         user_message = {"role": "user", "content": f"Старое объявление: {old_ad_text}\n\nКритерии редактирования: {edit_instructions}"}
         messages = [system_message, user_message]
@@ -126,7 +126,7 @@ class AdManager:
 
         return "".join(result)
 
-    def save_ad_to_json(self, ad_text, version):
+    def save_ad_to_json(self, ad_text, version, ad_index=None):  # Добавьте ad_index
         ad_data = {
             "creation_date": datetime.datetime.now().isoformat(),
             "version": version,
@@ -148,7 +148,10 @@ class AdManager:
         except FileNotFoundError:
             data = []
 
-        data.append(ad_data)
+        if ad_index is not None and 0 <= ad_index < len(data):  # Проверка индекса
+            data[ad_index] = ad_data  # Обновление существующего объявления
+        else:
+            data.append(ad_data)  # Добавление нового объявления
 
         with open('ad_data.json', 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=4)

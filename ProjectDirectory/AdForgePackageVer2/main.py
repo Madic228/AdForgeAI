@@ -62,25 +62,31 @@ async def main():
                 for i, ad in enumerate(ads):
                     print(f"{i + 1}: {ad['headline']} - {ad['audience']} - Версия: {ad['version']}")
 
-                ad_index = int(input("Введите номер объявления: ")) - 1
-                if 0 <= ad_index < len(ads):
-                    ad_manager.ad_text = ads[ad_index]['ad_text']
-                    ad_manager.headline = ads[ad_index]['headline']
-                    ad_manager.audience = ads[ad_index]['audience']
-                    ad_manager.key_benefits = ads[ad_index]['key_benefits']  # Добавьте эту строку
-                    ad_manager.call_to_action = ads[ad_index]['call_to_action']  # Добавьте эту строку
-                    ad_manager.style = ads[ad_index]['style']  # Добавьте эту строку
-                    ad_manager.length_limit = ads[ad_index]['length_limit']  # Добавьте эту строку
-                    ad_manager.model_name = ads[ad_index]['model_name']  # Добавьте эту строку
-                    ad_manager.temperature = ads[ad_index]['temperature']  # Добавьте эту строку
-                    ad_manager.stream = ads[ad_index]['stream']  # Добавьте эту строку
+                try:
+                    ad_index = int(input("Введите номер объявления: ")) - 1
+                    if 0 <= ad_index < len(ads):
+                        ad_manager.ad_text = ads[ad_index]['ad_text']
+                        ad_manager.headline = ads[ad_index]['headline']
+                        ad_manager.audience = ads[ad_index]['audience']
+                        ad_manager.key_benefits = ads[ad_index]['key_benefits']
+                        ad_manager.call_to_action = ads[ad_index]['call_to_action']
+                        ad_manager.style = ads[ad_index]['style']
+                        ad_manager.length_limit = ads[ad_index]['length_limit']
+                        ad_manager.model_name = ads[ad_index]['model_name']
+                        ad_manager.temperature = ads[ad_index]['temperature']
+                        ad_manager.stream = ads[ad_index]['stream']
 
-                    edit = input("Хотите отредактировать объявление? (да/нет): ").strip().lower()
-                    if edit == 'да':
-                        editor = AdEditor(ad_manager.ad_text, ad_manager)
-                        await editor.edit_ad()
-                else:
+                        edit = input("Хотите отредактировать объявление? (да/нет): ").strip().lower()
+                        if edit == 'да':
+                            editor = AdEditor(ad_manager.ad_text, ad_manager)
+                            await editor.edit_ad()
+                    else:
+                        print("Некорректный номер объявления.")
+                except ValueError:
+                    print("Некорректный ввод. Введите число.")
+                except IndexError:
                     print("Некорректный номер объявления.")
+
             else:
                 print("Нет сохраненных объявлений.")
         elif choice == '3':

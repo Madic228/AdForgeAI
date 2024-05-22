@@ -21,9 +21,12 @@ async def main():
     print("3: google/gemma-1.1-7b-it")
     print("4: NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO")
     print("5: green")
-    model_choice = int(input("Введите номер модели: "))
-    temperature = float(input("Введите значение temperature (например, 0.7): "))
-    stream = input("Включить режим stream? (да/нет): ").strip().lower() == 'да'
+    model_choice = input("Введите номер модели (необязательно): ")
+    model_choice = int(model_choice) if model_choice else None
+    temperature = input("Введите значение temperature (необязательно, например, 0.7): ")
+    temperature = float(temperature) if temperature else None
+    stream = input("Включить режим stream? (необязательно, да/нет): ").strip().lower()
+    stream = stream == 'да' if stream else None
 
     ad_manager.set_advanced_params(
         key_benefits=key_benefits,
@@ -39,17 +42,10 @@ async def main():
     if not stream:
         print("\nГотовое объявление:\n", ad_text)
 
-    edit_choice = input("Хотите отредактировать объявление? (да/нет): ").strip().lower() == 'да'
-    while edit_choice:
-        editor = AdEditor(ad_text)
-        editor.edit_ad()
-        edit_choice = input("Хотите отредактировать еще раз? (да/нет): ").strip().lower() == 'да'
-
-# # Прокси-сервер
-# proxies = {
-#     "all": "http://gkodmrwtb:fOqettKDvWrA@193.233.164.83:62970",
-#     "https": "https://gkodmrwtb:fOqettKDvWrA@193.233.164.83:62970"
-# }
+    edit = input("Хотите отредактировать объявление? (да/нет): ").strip().lower()
+    if edit == 'да':
+        editor = AdEditor(ad_text, ad_manager)
+        await editor.edit_ad()
 
 # Запуск асинхронной функции main
 asyncio.run(main())
