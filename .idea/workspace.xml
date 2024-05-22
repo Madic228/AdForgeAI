@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Обновление логики моделей" />
+    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Добавление подзагрузки провайдера">
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/ad_editor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/ad_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/ad_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +64,7 @@
     "Python.g4f_utils.executor": "Run",
     "Python.main (1).executor": "Run",
     "Python.main (2).executor": "Run",
+    "Python.main (3).executor": "Run",
     "Python.main.executor": "Run",
     "Python.main_claude.executor": "Run",
     "Python.main_logic.executor": "Run",
@@ -72,12 +81,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory/AdForgePackageVer2",
+    "last_opened_file_path": "C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory/AdForgePackageVer3",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory\AdForgePackageVer3" />
       <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory\AdForgePackageVer2" />
     </key>
   </component>
@@ -148,6 +158,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CreatingAdAI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CreatingAdAI" />
       <option name="ENV_FILES" value="" />
@@ -170,35 +202,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="maintest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="CreatingAdAI" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test 200524/MyProviders" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test 200524/MyProviders/maintest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main (2)" />
+        <item itemvalue="Python.main (3)" />
         <item itemvalue="Python.ad_editor" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.maintest" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716382505346</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Добавление подзагрузки провайдера">
+      <option name="closed" value="true" />
+      <created>1716383922795</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716383922795</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,6 +323,7 @@
     <MESSAGE value="Добавление обработки ошибок, связанных с эмодзи (юникодом)" />
     <MESSAGE value="Обновление сохранения в json истории объявлений" />
     <MESSAGE value="Обновление логики моделей" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновление логики моделей" />
+    <MESSAGE value="Добавление подзагрузки провайдера" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление подзагрузки провайдера" />
   </component>
 </project>
