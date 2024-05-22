@@ -5,51 +5,54 @@ import sys
 from config import model_provider_map
 import re
 
-class AdGenerator:
-    def __init__(self, model_name, provider, proxies=None):
-        self.model_name = model_name
-        self.provider = provider
-        self.proxies = proxies
+from ad_generator import AdGenerator
 
-    async def generate_ad(self, headline, audience, key_benefits=None, call_to_action=None, style=None, length_limit=None, temperature=0.7, stream=False):
-        system_message = {
-            "role": "system",
-            "content": "Вы профессионал в создании рекламных объявлений. Ваша задача - создавать высококачественные рекламные объявления, соответствующие заданным параметрам."
-                       " Вы пишите объявления без использования эмодзи, делаете их структурированными, с красивым форматированием. По всем стандартам. Абзацев должно быть несколько, текст должен быть со всеми возможными переносами."
-        }
-        prompt = f"Заголовок объявления: {headline}\nЦелевая аудитория: {audience}\n"
-        if key_benefits:
-            prompt += f"Ключевые преимущества: {key_benefits}\n"
-        if call_to_action:
-            prompt += f"Призыв к действию: {call_to_action}\n"
-        if style:
-            prompt += f"Стиль объявления: {style}\n"
-        if length_limit:
-            prompt += f"Желаемый размер объявления в символах: {length_limit}\n"
-
-        setting = "Вывод должен содержать только текст объявления и ничего больше Не используй эмодзи и юникод. При упоминании личных данных всегда добавляй [] и в них пиши, что пользователю нужно вписать."
-
-        user_message = {"role": "user", "content": prompt + setting}
-        messages = [system_message, user_message]
-
-        response_gen = self.provider.create_async_generator(
-            model=self.model_name,
-            messages=messages,
-            temperature=temperature,
-            stream=stream,
-            proxy=self.proxies.get("all") if self.proxies else None
-        )
-
-        result = []
-        if stream:
-            async for message in response_gen:
-                sys.stdout.buffer.write(message.encode('utf-8', 'surrogateescape'))
-                sys.stdout.buffer.flush()
-                result.append(message)
-        else:
-            result = [message async for message in response_gen]
-
-        return "".join(result)
+# class AdGenerator:
+#     def __init__(self, model_name, provider, proxies=None):
+#         self.model_name = model_name
+#         self.provider = provider
+#         self.proxies = proxies
+#
+#
+#     async def generate_ad(self, headline, audience, key_benefits=None, call_to_action=None, style=None, length_limit=None, temperature=0.7, stream=False):
+#         system_message = {
+#             "role": "system",
+#             "content": "Вы профессионал в создании рекламных объявлений. Ваша задача - создавать высококачественные рекламные объявления, соответствующие заданным параметрам."
+#                        " Вы пишите объявления без использования эмодзи, делаете их структурированными, с красивым форматированием. По всем стандартам. Абзацев должно быть несколько, текст должен быть со всеми возможными переносами."
+#         }
+#         prompt = f"Заголовок объявления: {headline}\nЦелевая аудитория: {audience}\n"
+#         if key_benefits:
+#             prompt += f"Ключевые преимущества: {key_benefits}\n"
+#         if call_to_action:
+#             prompt += f"Призыв к действию: {call_to_action}\n"
+#         if style:
+#             prompt += f"Стиль объявления: {style}\n"
+#         if length_limit:
+#             prompt += f"Желаемый размер объявления в символах: {length_limit}\n"
+#
+#         setting = "Вывод должен содержать только текст объявления и ничего больше Не используй эмодзи и юникод. При упоминании личных данных всегда добавляй [] и в них пиши, что пользователю нужно вписать."
+#
+#         user_message = {"role": "user", "content": prompt + setting}
+#         messages = [system_message, user_message]
+#
+#         response_gen = self.provider.create_async_generator(
+#             model=self.model_name,
+#             messages=messages,
+#             temperature=temperature,
+#             stream=stream,
+#             proxy=self.proxies.get("all") if self.proxies else None
+#         )
+#
+#         result = []
+#         if stream:
+#             async for message in response_gen:
+#                 sys.stdout.buffer.write(message.encode('utf-8', 'surrogateescape'))
+#                 sys.stdout.buffer.flush()
+#                 result.append(message)
+#         else:
+#             result = [message async for message in response_gen]
+#
+#         return "".join(result)
 
 class AdManager:
     def __init__(self, proxies=None):
@@ -82,7 +85,7 @@ class AdManager:
         if stream is not None:
             self.stream = stream
         self.generator = AdGenerator(model_name=self.model_name, provider=self.provider, proxies=self.proxies)
-
+        self.initialize_generator()
     def get_model_name_and_provider(self, choice):
         return model_provider_map.get(choice, ('gpt-3.5-turbo-0125', g4f.Provider.Ecosia))
 
@@ -143,6 +146,7 @@ class AdManager:
             "style": self.style,
             "length_limit": self.length_limit,
             "model_name": self.model_name,
+            "provider": self.provider.__name__,  # Сохранение провайдера
             "temperature": self.temperature,
             "stream": self.stream,
             "ad_text": ad_text
@@ -165,6 +169,7 @@ class AdManager:
                 ad["style"] = ad_data["style"]
                 ad["length_limit"] = ad_data["length_limit"]
                 ad["model_name"] = ad_data["model_name"]
+                ad["provider"] = ad_data["provider"]
                 ad["temperature"] = ad_data["temperature"]
                 ad["stream"] = ad_data["stream"]
                 ad["ad_text"] = ad_data["ad_text"]
@@ -185,6 +190,8 @@ class AdManager:
         except FileNotFoundError:
             return []
 
+    def initialize_generator(self):
+        self.generator = AdGenerator(model_name=self.model_name, provider=self.provider, proxies=self.proxies)
 
 def remove_surrogates(text):
     # Удаление суррогатных пар

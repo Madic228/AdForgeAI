@@ -64,8 +64,7 @@ class AdEditor:
                     ads = self.ad_manager.load_ad_version_from_json()
                     if ads:
                         for ad in ads:
-                            if ad["headline"] == self.ad_manager.headline and ad[
-                                "audience"] == self.ad_manager.audience:
+                            if ad["headline"] == self.ad_manager.headline and ad["audience"] == self.ad_manager.audience:
                                 new_version = ad["version"] + 1
                                 self.ad_manager.save_ad_to_json(self.ad_text, new_version, ads.index(ad))
                                 break
