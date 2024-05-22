@@ -3,6 +3,7 @@ import datetime
 import g4f
 import sys
 from config import model_provider_map
+import re
 
 class AdGenerator:
     def __init__(self, model_name, provider, proxies=None):
@@ -96,6 +97,8 @@ class AdManager:
             temperature=self.temperature,
             stream=self.stream
         )
+
+        ad_text = remove_surrogates(ad_text)  # Удаление суррогатных пар
         self.save_ad_to_json(ad_text, 1)
         return ad_text
 
@@ -124,9 +127,12 @@ class AdManager:
         else:
             result = [message async for message in response_gen]
 
-        return "".join(result)
+        ad_text = "".join(result)
+        ad_text = remove_surrogates(ad_text)  # Удаление суррогатных пар
+        return ad_text
 
-    def save_ad_to_json(self, ad_text, version, ad_index=None):  # Добавьте ad_index
+    def save_ad_to_json(self, ad_text, version, ad_index=None):
+        ad_text = remove_surrogates(ad_text)  # Удаление суррогатных пар
         ad_data = {
             "creation_date": datetime.datetime.now().isoformat(),
             "version": version,
@@ -163,5 +169,10 @@ class AdManager:
             return data
         except FileNotFoundError:
             return []
+
+
+def remove_surrogates(text):
+    # Удаление суррогатных пар
+    return re.sub(r'[\ud800-\udfff]', '', text)
 
 
