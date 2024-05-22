@@ -1,8 +1,7 @@
-from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt, QPoint
 from ui_loader import load_ui
-from event_handlers import toggle_icon_and_move, slide_it, clear_fields
+from event_handlers import v_genToggle, newGenToggle, uparrowToggle, downarrowToggle, slide_it, generationToggle
 
 class MyWindow(QMainWindow):
     def __init__(self):
@@ -19,10 +18,17 @@ class MyWindow(QMainWindow):
         self.input_dialog.hide()
         self.line_4 = self.findChild(QFrame, 'line_4')
 
-        # Найти кнопку и установить начальную иконку
-        self.droparrow_button = self.findChild(QPushButton, 'droparrowBtn')
-        self.is_down = True
-        self.droparrow_button.clicked.connect(lambda: toggle_icon_and_move(self))
+        # Найти виджет VisibleInputDialog
+        self.v_input_dialog = self.findChild(QWidget, 'VisibleInputDialog')
+        self.line_6 = self.findChild(QFrame, 'line_6')
+
+        # Найти виджет EditInputDialog
+        self.e_input_dialog = self.findChild(QWidget, 'EditInputDialog')
+        self.e_input_dialog.hide()
+        self.line_7 = self.findChild(QFrame, 'line_7')
+
+        # self.is_down = True
+        # self.droparrow_button.clicked.connect(lambda: toggle_icon_and_move(self))
 
         # Создаем QSlider
         self.slider = self.findChild(QSlider, 'slider')
@@ -43,21 +49,27 @@ class MyWindow(QMainWindow):
 
         #Найти кнопки генерации текста и очищение полей
         self.genBtn = self.findChild(QPushButton, 'generationBtn')
-        self.clearBtn = self.findChild(QPushButton, 'clearBtn')
-
-        #Найти поля ввода данных
-        self.headlineEdit = self.findChild(QLineEdit, 'headlineEdit')
-        self.audienceEdit = self.findChild(QLineEdit, 'audienceEdit')
-        self.keyEdit = self.findChild(QLineEdit, 'keyEdit')
-        self.actionEdit = self.findChild(QLineEdit, 'actionEdit')
-        self.lengthEdit = self.findChild(QLineEdit, 'lengthEdit')
-
-        # Подключить кнопку очистки к слоту
-        self.clearBtn.clicked.connect(lambda: clear_fields(self))
 
         # Настройка кнопок управления окном
         self.setup_button('close', self.close_window)
         self.setup_button('collapse', self.minimize_window)
+
+        # Переключения страниц
+        self.newGeneration = self.findChild(QPushButton, 'generationBtn')
+        self.newGeneration.clicked.connect(lambda: generationToggle(self))
+
+        self.newGeneration = self.findChild(QPushButton, 'v_generationBtn')
+        self.newGeneration.clicked.connect(lambda: v_genToggle(self))
+
+        self.droparrow_button = self.findChild(QPushButton, 'downarrowBtn')
+        self.droparrow_button.clicked.connect(lambda: downarrowToggle(self))
+
+        self.uparrow_button = self.findChild(QPushButton, 'uparrowBtn')
+        self.uparrow_button.clicked.connect(lambda: uparrowToggle(self))
+
+        self.newGeneration = self.findChild(QPushButton, 'newGenerationBtn')
+        self.newGeneration.clicked.connect(lambda: newGenToggle(self))
+
 
         # Инициализация для перетаскивания окна
         self.oldPos = self.pos()
