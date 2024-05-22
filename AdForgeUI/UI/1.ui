@@ -34,12 +34,12 @@ border-radius: 15px;
 color: rgba(100, 189, 100, 1);
 }
 
-#InputDialog{
+#InputDialog, #VisibleInputDialog{
 border-radius: 10px;
 background-color:#282C34;
 }
 
-#line_2, #line_3, #line_4, #line_5{
+#line_2, #line_3, #line_4, #line_5, #line_6{
 background-color: #494949;
 }
 
@@ -56,11 +56,11 @@ border-style:solid;
 background-color: #23252B;
 }
 
-#optionsTxt, #advSetTxt, #tempTxt, #tempResTxt {
+#v_optionsTxt, #optionsTxt, #advSetTxt, #tempTxt, #tempResTxt {
 background-color:#282C34;
 }
 
-#clearBtn, #generationBtn, #newGenerationBtn {
+#v_clearBtn, #v_generationBtn, #clearBtn, #generationBtn, #newGenerationBtn {
 background-color: #28F1A9;
 border-style: solid;
 border-radius: 10px;
@@ -82,7 +82,7 @@ background-color: #23252B;
 background-color: #23252B;
 }
 
-#headlineEdit, #audienceEdit, #keyEdit, #actionEdit, #styleBox, #styleBox_2, #styleBox_3, #lengthEdit{
+#v_headlineEdit, #v_audienceEdit, #headlineEdit, #audienceEdit, #keyEdit, #actionEdit, #styleBox, #styleBox_2, #styleBox_3, #lengthEdit{
 border-style:solid;
 border-width:1px;
 border-color:#494949;
@@ -396,7 +396,7 @@ border-style:solid;
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>150</y>
+      <y>490</y>
       <width>20</width>
       <height>20</height>
      </rect>
@@ -406,12 +406,15 @@ border-style:solid;
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../images/down-arrow.png</normaloff>../images/down-arrow.png</iconset>
+      <normaloff>../images/up-arrow.png</normaloff>../images/up-arrow.png</iconset>
     </property>
     <property name="checkable">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
      <bool>false</bool>
     </property>
    </widget>
@@ -419,7 +422,7 @@ border-style:solid;
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>150</y>
+      <y>487</y>
       <width>500</width>
       <height>2</height>
      </rect>
@@ -507,361 +510,360 @@ border-style:solid;
      <string>Удалить все объявления</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QWidget" name="InputDialog" native="true">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>240</y>
-     <width>480</width>
-     <height>510</height>
-    </rect>
-   </property>
-   <widget class="Line" name="line_3">
+   <widget class="QWidget" name="InputDialog" native="true">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>40</y>
-      <width>481</width>
-      <height>2</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="optionsTxt">
-    <property name="geometry">
-     <rect>
-      <x>15</x>
-      <y>55</y>
-      <width>151</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Основные параметры</string>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="headlineEdit">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>90</y>
-      <width>415</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="placeholderText">
-     <string>Введите заголовок объявления</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="audienceEdit">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>135</y>
-      <width>415</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="placeholderText">
-     <string>Введите целевую аудитория</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="generationBtn">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>6</y>
-      <width>165</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>7</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Генерировать объявление</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="clearBtn">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>6</y>
-      <width>90</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>7</pointsize>
-      <strikeout>false</strikeout>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">w</string>
-    </property>
-    <property name="text">
-     <string>Очистить всё</string>
-    </property>
-    <property name="checkable">
-     <bool>false</bool>
-    </property>
-    <property name="default">
-     <bool>false</bool>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="keyEdit">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
+      <x>10</x>
       <y>180</y>
-      <width>415</width>
-      <height>26</height>
+      <width>480</width>
+      <height>510</height>
      </rect>
     </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="placeholderText">
-     <string>Введите ключевые преимущества</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="actionEdit">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>225</y>
-      <width>415</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="placeholderText">
-     <string>Введите призыв к действию</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lengthEdit">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>315</y>
-      <width>415</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="placeholderText">
-     <string>Введите ограничение на длину слов</string>
-    </property>
-   </widget>
-   <widget class="QFrame" name="line_5">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>380</y>
-      <width>350</width>
-      <height>2</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="advSetTxt">
-    <property name="geometry">
-     <rect>
-      <x>15</x>
-      <y>400</y>
-      <width>170</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Расширенные настройки</string>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="styleBox">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>270</y>
-      <width>415</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="whatsThis">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QToolTip{
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>481</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="optionsTxt">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>55</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Основные параметры</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="headlineEdit">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>90</y>
+       <width>415</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Введите заголовок объявления</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="audienceEdit">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>135</y>
+       <width>415</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Введите целевую аудитория</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="generationBtn">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>6</y>
+       <width>165</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Генерировать объявление</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="clearBtn">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>6</y>
+       <width>90</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">w</string>
+     </property>
+     <property name="text">
+      <string>Очистить всё</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="keyEdit">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>180</y>
+       <width>415</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Введите ключевые преимущества</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="actionEdit">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>225</y>
+       <width>415</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Введите призыв к действию</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lengthEdit">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>315</y>
+       <width>415</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Введите ограничение на длину слов</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>380</y>
+       <width>350</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="advSetTxt">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>400</y>
+       <width>170</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Расширенные настройки</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="styleBox">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>270</y>
+       <width>415</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolTip{
 color: black;
 background-color:white;
 font-size:12px;
 }</string>
-    </property>
-    <property name="editable">
-     <bool>false</bool>
-    </property>
-    <property name="duplicatesEnabled">
-     <bool>false</bool>
-    </property>
-    <item>
-     <property name="text">
-      <string>Деловой</string>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Неформальный</string>
+     <property name="editable">
+      <bool>false</bool>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Юмористический</string>
+     <property name="duplicatesEnabled">
+      <bool>false</bool>
      </property>
-    </item>
-   </widget>
-   <widget class="QComboBox" name="styleBox_2">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>430</y>
-      <width>141</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="whatsThis">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QToolTip{
+     <item>
+      <property name="text">
+       <string>Деловой</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Неформальный</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Юмористический</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="styleBox_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>430</y>
+       <width>141</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolTip{
 color: black;
 background-color:white;
 font-size:12px;
 }</string>
-    </property>
-    <property name="editable">
-     <bool>false</bool>
-    </property>
-    <property name="duplicatesEnabled">
-     <bool>false</bool>
-    </property>
-    <item>
-     <property name="text">
-      <string>gpt-3.5-turbo</string>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>google/gemma-1.1-7b-it</string>
+     <property name="editable">
+      <bool>false</bool>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>claude-3</string>
+     <property name="duplicatesEnabled">
+      <bool>false</bool>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>NousResearch</string>
+     <item>
+      <property name="text">
+       <string>gpt-3.5-turbo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>google/gemma-1.1-7b-it</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>claude-3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NousResearch</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>green</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="styleBox_3">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>430</y>
+       <width>151</width>
+       <height>26</height>
+      </rect>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>green</string>
+     <property name="toolTip">
+      <string/>
      </property>
-    </item>
-   </widget>
-   <widget class="QComboBox" name="styleBox_3">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>430</y>
-      <width>151</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="whatsThis">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QToolTip{
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolTip{
 color: black;
 background-color:white;
 font-size:12px;
 }</string>
-    </property>
-    <property name="editable">
-     <bool>false</bool>
-    </property>
-    <property name="duplicatesEnabled">
-     <bool>false</bool>
-    </property>
-    <item>
-     <property name="text">
-      <string>Выключить обработку</string>
      </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Включить обработку</string>
+     <property name="editable">
+      <bool>false</bool>
      </property>
-    </item>
-   </widget>
-   <widget class="QSlider" name="slider">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>470</y>
-      <width>201</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QSlider{
+     <property name="duplicatesEnabled">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>Выключить обработку</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Включить обработку</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QSlider" name="slider">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>470</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider{
 background-color: #282C34;
 }
 
@@ -894,121 +896,252 @@ QSlider::groove:horizontal {
                 height: 8px;
                 border-radius: 4px;
 }</string>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="tempTxt">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>472</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Температура</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="tempResTxt">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>472</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0.0</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="infBtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>272</y>
+       <width>27</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Указывается стиль объявления</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolTip{
+color: black;
+background-color:white;
+font-size:12px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../../AdForgeUI/images/info.png</normaloff>../../../../AdForgeUI/images/info.png</iconset>
+     </property>
+     <property name="autoRaise">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="infBtn_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>432</y>
+       <width>27</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Указывается модель ИИ, которая будет генерировать объявление</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolTip{
+color: black;
+background-color:white;
+font-size:12px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../../AdForgeUI/images/info.png</normaloff>../../../../AdForgeUI/images/info.png</iconset>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="infBtn_3">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>432</y>
+       <width>27</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Указывается наличие потоковой обработка</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolTip{
+color: black;
+background-color:white;
+font-size:12px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../../AdForgeUI/images/info.png</normaloff>../../../../AdForgeUI/images/info.png</iconset>
+     </property>
+    </widget>
    </widget>
-   <widget class="QLabel" name="tempTxt">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>472</y>
-      <width>81</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Температура</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="tempResTxt">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>472</y>
-      <width>21</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0.0</string>
-    </property>
-   </widget>
-   <widget class="QToolButton" name="infBtn">
+   <widget class="QWidget" name="VisibleInputDialog" native="true">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>272</y>
-      <width>27</width>
-      <height>22</height>
+      <y>509</y>
+      <width>480</width>
+      <height>181</height>
      </rect>
     </property>
-    <property name="toolTip">
-     <string>Указывается стиль объявления</string>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QToolTip{
-color: black;
-background-color:white;
-font-size:12px;
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../../../../AdForgeUI/images/info.png</normaloff>../../../../AdForgeUI/images/info.png</iconset>
-    </property>
-    <property name="autoRaise">
-     <bool>false</bool>
-    </property>
+    <widget class="QLineEdit" name="v_audienceEdit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>135</y>
+       <width>415</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Введите целевую аудитория</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="v_headlineEdit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>95</y>
+       <width>415</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Введите заголовок объявления</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="v_optionsTxt">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>65</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Основные параметры</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="v_generationBtn">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>15</y>
+       <width>165</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Генерировать объявление</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="v_clearBtn">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>15</y>
+       <width>90</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">w</string>
+     </property>
+     <property name="text">
+      <string>Очистить всё</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>55</y>
+       <width>481</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
    </widget>
-   <widget class="QToolButton" name="infBtn_2">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>432</y>
-      <width>27</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string>Указывается модель ИИ, которая будет генерировать объявление</string>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QToolTip{
-color: black;
-background-color:white;
-font-size:12px;
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../../../../AdForgeUI/images/info.png</normaloff>../../../../AdForgeUI/images/info.png</iconset>
-    </property>
-   </widget>
-   <widget class="QToolButton" name="infBtn_3">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>432</y>
-      <width>27</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string>Указывается наличие потоковой обработка</string>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QToolTip{
-color: black;
-background-color:white;
-font-size:12px;
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../../../../AdForgeUI/images/info.png</normaloff>../../../../AdForgeUI/images/info.png</iconset>
-    </property>
-   </widget>
+   <zorder>InputDialog</zorder>
+   <zorder>droparrowBtn</zorder>
+   <zorder>line_4</zorder>
+   <zorder>line_2</zorder>
+   <zorder>newGenerationBtn</zorder>
+   <zorder>generationListTxt</zorder>
+   <zorder>deleteGenBtn</zorder>
+   <zorder>VisibleInputDialog</zorder>
   </widget>
  </widget>
  <resources/>
@@ -1057,7 +1190,7 @@ font-size:12px;
     </hint>
     <hint type="destinationlabel">
      <x>430</x>
-     <y>429</y>
+     <y>439</y>
     </hint>
    </hints>
   </connection>
@@ -1090,6 +1223,38 @@ font-size:12px;
     <hint type="destinationlabel">
      <x>457</x>
      <y>574</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>droparrowBtn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>InputDialog</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>440</x>
+     <y>570</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>droparrowBtn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>VisibleInputDialog</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>439</x>
+     <y>574</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>631</y>
     </hint>
    </hints>
   </connection>

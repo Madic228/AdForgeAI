@@ -14,13 +14,15 @@ class MyWindow(QMainWindow):
         self.form = load_ui(self)
         self.setWindowFlags(Qt.FramelessWindowHint)
 
+        # Найти виджет InputDialog
+        self.input_dialog = self.findChild(QWidget, 'InputDialog')
+        self.input_dialog.hide()
+        self.line_4 = self.findChild(QFrame, 'line_4')
 
         # Найти кнопку и установить начальную иконку
         self.droparrow_button = self.findChild(QPushButton, 'droparrowBtn')
-        if self.droparrow_button:
-            self.is_down = True
-            self.droparrow_button.setIcon(QIcon('images/up-arrow.png'))
-            self.droparrow_button.clicked.connect(lambda: toggle_icon_and_move(self))
+        self.is_down = True
+        self.droparrow_button.clicked.connect(lambda: toggle_icon_and_move(self))
 
         # Создаем QSlider
         self.slider = self.findChild(QSlider, 'slider')
@@ -35,10 +37,6 @@ class MyWindow(QMainWindow):
         initial_value = self.slider.value() / 10.0
         self.tempResTxt.setText(f"{initial_value:.1f}")
         self.slider.valueChanged.connect(lambda value: slide_it(self, value))
-
-        # Найти виджет InputDialog
-        self.input_dialog = self.findChild(QWidget, 'InputDialog')
-        self.line_4 = self.findChild(QFrame, 'line_4')
 
         #Найти кнопки генерации текста и очищение полей
         self.genBtn = self.findChild(QPushButton, 'generationBtn')
