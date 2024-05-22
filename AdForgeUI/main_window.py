@@ -1,6 +1,6 @@
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import *
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QPoint
 from ui_loader import load_ui
 from event_handlers import toggle_icon_and_move, slide_it, clear_fields
 
@@ -38,6 +38,9 @@ class MyWindow(QMainWindow):
         self.tempResTxt.setText(f"{initial_value:.1f}")
         self.slider.valueChanged.connect(lambda value: slide_it(self, value))
 
+        # Переопределение метода mousePressEvent
+        self.slider.mousePressEvent = self.create_mouse_press_event(self.slider.mousePressEvent)
+
         #Найти кнопки генерации текста и очищение полей
         self.genBtn = self.findChild(QPushButton, 'generationBtn')
         self.clearBtn = self.findChild(QPushButton, 'clearBtn')
@@ -55,6 +58,36 @@ class MyWindow(QMainWindow):
         # Настройка кнопок управления окном
         self.setup_button('close', self.close_window)
         self.setup_button('collapse', self.minimize_window)
+
+        # Инициализация для перетаскивания окна
+        self.oldPos = self.pos()
+
+    def create_mouse_press_event(self, original_mouse_press_event):
+        def new_mouse_press_event(event):
+            if event.button() == Qt.LeftButton:
+                value = QStyle.sliderValueFromPosition(
+                    self.slider.minimum(),
+                    self.slider.maximum(),
+                    event.x(),
+                    self.slider.width()
+                )
+                self.slider.setValue(value)
+                event.accept()
+            original_mouse_press_event(event)
+
+        return new_mouse_press_event
+
+    def mousePressEvent(self, event, **kwargs):
+        if event.button() == Qt.LeftButton:
+            self.oldPos = event.globalPos()
+
+    def mouseMoveEvent(self, event, **kwargs):
+        if event.buttons() == Qt.LeftButton:
+            delta = QPoint(event.globalPos() - self.oldPos)
+            if self.oldPos.y() < self.pos().y() + 50:  # Проверка, если клик произошел в верхней части окна
+                self.move(self.x() + delta.x(), self.y() + delta.y())
+                self.oldPos = event.globalPos()
+
 
     def setup_button(self, button_name, callback):
         button = self.findChild(QPushButton, button_name)
