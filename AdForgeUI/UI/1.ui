@@ -34,12 +34,12 @@ border-radius: 15px;
 color: rgba(100, 189, 100, 1);
 }
 
-#InputDialog, #VisibleInputDialog{
+#InputDialog, #VisibleInputDialog, #EditInputDialog{
 border-radius: 10px;
 background-color:#282C34;
 }
 
-#line_2, #line_3, #line_4, #line_5, #line_6{
+#line_2, #line_3, #line_4, #line_5, #line_6, #line_7{
 background-color: #494949;
 }
 
@@ -56,11 +56,11 @@ border-style:solid;
 background-color: #23252B;
 }
 
-#v_optionsTxt, #optionsTxt, #advSetTxt, #tempTxt, #tempResTxt {
+#v_optionsTxt, #e_optionsTxt, #e_changeTxt, #optionsTxt, #advSetTxt, #tempTxt, #tempResTxt, #e_tempTxt, #e_tempResTxt {
 background-color:#282C34;
 }
 
-#v_clearBtn, #v_generationBtn, #clearBtn, #generationBtn, #newGenerationBtn {
+#v_clearBtn, #v_generationBtn, #e_clearBtn, #e_generationBtn, #clearBtn, #generationBtn, #newGenerationBtn {
 background-color: #28F1A9;
 border-style: solid;
 border-radius: 10px;
@@ -82,15 +82,25 @@ background-color: #23252B;
 background-color: #23252B;
 }
 
-#v_headlineEdit, #v_audienceEdit, #headlineEdit, #audienceEdit, #keyEdit, #actionEdit, #styleBox, #styleBox_2, #styleBox_3, #lengthEdit{
+#v_headlineEdit, #v_audienceEdit, #e_headlineEdit, #e_audienceEdit, #headlineEdit, #audienceEdit, #keyEdit, #actionEdit, #styleBox, #modelBox, #potokBox, #e_modelBox, #e_potokBox, #lengthEdit, #e_changeEdit{
 border-style:solid;
 border-width:1px;
 border-color:#494949;
 }
 
-#infBtn, #infBtn_2, #infBtn_3{
+#infBtn, #infBtn_2, #infBtn_3, #e_infBtn, #e_infBtn_2{
 background-color:#282C34;
 border-style:solid;
+}
+
+#saveBtn, #copyBtn{
+padding-left: 12px;
+padding-right:10px;
+text-align:left;
+border-style:solid;
+border-width:2px;
+border-color:#494949;
+border-radius:8px;
 }
 
 </string>
@@ -389,51 +399,6 @@ border-style:solid;
    <property name="styleSheet">
     <string notr="true"/>
    </property>
-   <widget class="QPushButton" name="droparrowBtn">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>230</x>
-      <y>490</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../images/up-arrow.png</normaloff>../images/up-arrow.png</iconset>
-    </property>
-    <property name="checkable">
-     <bool>true</bool>
-    </property>
-    <property name="checked">
-     <bool>false</bool>
-    </property>
-    <property name="autoExclusive">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QFrame" name="line_4">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>487</y>
-      <width>500</width>
-      <height>2</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
    <widget class="QFrame" name="line_2">
     <property name="geometry">
      <rect>
@@ -466,6 +431,12 @@ border-style:solid;
     </property>
     <property name="text">
      <string>Новое объявление</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLabel" name="generationListTxt">
@@ -511,6 +482,9 @@ border-style:solid;
     </property>
    </widget>
    <widget class="QWidget" name="InputDialog" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -599,6 +573,12 @@ border-style:solid;
      <property name="text">
       <string>Генерировать объявление</string>
      </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
     </widget>
     <widget class="QPushButton" name="clearBtn">
      <property name="geometry">
@@ -622,6 +602,9 @@ border-style:solid;
       <string>Очистить всё</string>
      </property>
      <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
       <bool>false</bool>
      </property>
      <property name="default">
@@ -683,7 +666,7 @@ border-style:solid;
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>380</y>
+       <y>370</y>
        <width>350</width>
        <height>2</height>
       </rect>
@@ -760,7 +743,7 @@ font-size:12px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="styleBox_2">
+    <widget class="QComboBox" name="modelBox">
      <property name="geometry">
       <rect>
        <x>60</x>
@@ -814,7 +797,7 @@ font-size:12px;
       </property>
      </item>
     </widget>
-    <widget class="QComboBox" name="styleBox_3">
+    <widget class="QComboBox" name="potokBox">
      <property name="geometry">
       <rect>
        <x>280</x>
@@ -931,7 +914,7 @@ QSlider::groove:horizontal {
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>272</y>
+       <y>271</y>
        <width>27</width>
        <height>22</height>
       </rect>
@@ -951,7 +934,7 @@ font-size:12px;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../AdForgeUI/images/info.png</normaloff>../../../../AdForgeUI/images/info.png</iconset>
+       <normaloff>../images/inf.png</normaloff>../images/inf.png</iconset>
      </property>
      <property name="autoRaise">
       <bool>false</bool>
@@ -981,7 +964,7 @@ font-size:12px;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../AdForgeUI/images/info.png</normaloff>../../../../AdForgeUI/images/info.png</iconset>
+       <normaloff>../images/inf.png</normaloff>../images/inf.png</iconset>
      </property>
     </widget>
     <widget class="QToolButton" name="infBtn_3">
@@ -1008,7 +991,43 @@ font-size:12px;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../AdForgeUI/images/info.png</normaloff>../../../../AdForgeUI/images/info.png</iconset>
+       <normaloff>../images/inf.png</normaloff>../images/inf.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="uparrowBtn">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>6</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::WheelFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #282C34;
+border-style:solid;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/down-arrow.png</normaloff>../images/down-arrow.png</iconset>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
      </property>
     </widget>
    </widget>
@@ -1088,6 +1107,12 @@ font-size:12px;
      <property name="text">
       <string>Генерировать объявление</string>
      </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
     </widget>
     <widget class="QPushButton" name="v_clearBtn">
      <property name="geometry">
@@ -1111,7 +1136,10 @@ font-size:12px;
       <string>Очистить всё</string>
      </property>
      <property name="checkable">
-      <bool>false</bool>
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
      </property>
      <property name="default">
       <bool>false</bool>
@@ -1133,10 +1161,402 @@ font-size:12px;
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
+    <widget class="QPushButton" name="downarrowBtn">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>15</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #282C34;
+border-style:solid;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/up-arrow.png</normaloff>../images/up-arrow.png</iconset>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="EditInputDialog" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>439</y>
+      <width>480</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="e_optionsTxt">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>65</y>
+       <width>281</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Настройка и редактирование обявления</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="e_generationBtn">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>15</y>
+       <width>165</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Применить изменения</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_7">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>55</y>
+       <width>481</width>
+       <height>2</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="e_potokBox">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>100</y>
+       <width>151</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolTip{
+color: black;
+background-color:white;
+font-size:12px;
+}</string>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <property name="duplicatesEnabled">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>Выключить обработку</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Включить обработку</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="e_modelBox">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>100</y>
+       <width>141</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolTip{
+color: black;
+background-color:white;
+font-size:12px;
+}</string>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <property name="duplicatesEnabled">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>gpt-3.5-turbo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>google/gemma-1.1-7b-it</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>claude-3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NousResearch</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>green</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QToolButton" name="e_infBtn">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>102</y>
+       <width>27</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Указывается наличие потоковой обработка</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolTip{
+color: black;
+background-color:white;
+font-size:12px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/inf.png</normaloff>../images/inf.png</iconset>
+     </property>
+    </widget>
+    <widget class="QSlider" name="e_slider">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>138</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider{
+background-color: #282C34;
+}
+
+QSlider::groove:horizontal {
+                height: 1px;
+                background: #53F4BA;
+                margin: 2px 0;
+                border-radius: 2px;
+            }
+
+            QSlider::handle:horizontal {
+                background: #53F4BA;
+                border: 1px solid #53F4BA;
+                width: 7px;
+                height: 7px;
+                border-radius: 3px;
+                margin: -5px 0;
+            }
+
+            QSlider::sub-page:horizontal {
+                background: #53F4BA;
+                border: 1px solid #53F4BA;
+                height: 8px;
+                border-radius: 4px;
+            }
+
+            QSlider::add-page:horizontal {
+                background: #222429;
+                border: 1px solid #222429;
+                height: 8px;
+                border-radius: 4px;
+}</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="e_infBtn_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>102</y>
+       <width>27</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Указывается модель ИИ, которая будет генерировать объявление</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolTip{
+color: black;
+background-color:white;
+font-size:12px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/inf.png</normaloff>../images/inf.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="e_tempTxt">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>140</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Температура</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="e_tempResTxt">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>140</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0.0</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="saveBtn">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>15</y>
+       <width>141</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Сохранить как</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/download.png</normaloff>../images/download.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="copyBtn">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>15</y>
+       <width>141</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <property name="text">
+      <string>Копировать</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/copy.png</normaloff>../images/copy.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="e_changeTxt">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>170</y>
+       <width>181</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Произвольные изменения</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="e_changeEdit">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>200</y>
+       <width>415</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Введите изменения, которые хотите внести</string>
+     </property>
+    </widget>
    </widget>
    <zorder>InputDialog</zorder>
-   <zorder>droparrowBtn</zorder>
-   <zorder>line_4</zorder>
+   <zorder>EditInputDialog</zorder>
    <zorder>line_2</zorder>
    <zorder>newGenerationBtn</zorder>
    <zorder>generationListTxt</zorder>
@@ -1146,6 +1566,54 @@ font-size:12px;
  </widget>
  <resources/>
  <connections>
+  <connection>
+   <sender>downarrowBtn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>EditInputDialog</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>439</x>
+     <y>569</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>449</x>
+     <y>669</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>downarrowBtn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>InputDialog</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>440</x>
+     <y>570</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>lengthEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>256</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>457</x>
+     <y>574</y>
+    </hint>
+   </hints>
+  </connection>
   <connection>
    <sender>clearBtn</sender>
    <signal>clicked()</signal>
@@ -1159,38 +1627,6 @@ font-size:12px;
     <hint type="destinationlabel">
      <x>457</x>
      <y>342</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>clearBtn</sender>
-   <signal>clicked()</signal>
-   <receiver>audienceEdit</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>454</x>
-     <y>259</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>457</x>
-     <y>387</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>clearBtn</sender>
-   <signal>clicked()</signal>
-   <receiver>keyEdit</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>429</x>
-     <y>264</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>430</x>
-     <y>439</y>
     </hint>
    </hints>
   </connection>
@@ -1213,37 +1649,21 @@ font-size:12px;
   <connection>
    <sender>clearBtn</sender>
    <signal>clicked()</signal>
-   <receiver>lengthEdit</receiver>
+   <receiver>audienceEdit</receiver>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>468</x>
-     <y>256</y>
+     <x>454</x>
+     <y>259</y>
     </hint>
     <hint type="destinationlabel">
      <x>457</x>
-     <y>574</y>
+     <y>387</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>droparrowBtn</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>InputDialog</receiver>
-   <slot>setHidden(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>440</x>
-     <y>570</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>298</x>
-     <y>282</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>droparrowBtn</sender>
+   <sender>downarrowBtn</sender>
    <signal>toggled(bool)</signal>
    <receiver>VisibleInputDialog</receiver>
    <slot>setVisible(bool)</slot>
@@ -1255,6 +1675,54 @@ font-size:12px;
     <hint type="destinationlabel">
      <x>395</x>
      <y>631</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>keyEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>429</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>439</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>v_clearBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>v_audienceEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>613</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>475</x>
+     <y>735</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>v_clearBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>v_headlineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>474</x>
+     <y>610</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>491</x>
+     <y>686</y>
     </hint>
    </hints>
   </connection>
