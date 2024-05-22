@@ -142,10 +142,23 @@ class AdManager:
             "ad_text": ad_text
         }
 
+        try:
+            with open('ad_data.json', 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        except FileNotFoundError:
+            data = []
+
+        data.append(ad_data)
+
         with open('ad_data.json', 'w', encoding='utf-8') as f:
-            json.dump(ad_data, f, ensure_ascii=False, indent=4)
+            json.dump(data, f, ensure_ascii=False, indent=4)
 
     def load_ad_version_from_json(self):
-        with open('ad_data.json', 'r', encoding='utf-8') as f:
-            ad_data = json.load(f)
-        return ad_data["version"]
+        try:
+            with open('ad_data.json', 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            return data
+        except FileNotFoundError:
+            return []
+
+
