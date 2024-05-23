@@ -1,0 +1,949 @@
+Index: ProjectDirectory/AdForgePackage/ad_data.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ProjectDirectory/AdForgePackage/ad_data.json b/ProjectDirectory/AdForgePackage/ad_data.json
+new file mode 100644
+--- /dev/null	(date 1716374987180)
++++ b/ProjectDirectory/AdForgePackage/ad_data.json	(date 1716374987180)
+@@ -0,0 +1,14 @@
++{
++    "creation_date": "2024-05-22T15:49:47.180932",
++    "version": 2,
++    "headline": "Открылся новый компьютерный клуб",
++    "audience": "Геймеры",
++    "key_benefits": "",
++    "call_to_action": "",
++    "style": "",
++    "length_limit": null,
++    "model_name": "gpt-3.5-turbo-0125",
++    "temperature": 0.7,
++    "stream": false,
++    "ad_text": "🎮 Новый уровень игрового опыта! 🕹️\nПрисоединяйтесь к нам в нашем свежем компьютерном клубе! 🖥️\nИграйте в свои любимые игры на профессиональном оборудовании и в уютной атмосфере. 🎯\nУ нас также доступны эксклюзивные игры, турниры и специальные акции для посетителей! 🏆🎉\nПосетите нас по адресу: [впишите адрес]\nНе упустите шанс на увлекательное времяпрепровождение! 🎮"
++}
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_12_57_[Changes]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_12_57_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_12_57_[Changes]/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1716451066712)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_12_57_[Changes]/shelved.patch	(date 1716451066712)
+@@ -0,0 +1,58 @@
++Index: ProjectDirectory/AdForgePackageVer4/ad_data.json
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/ProjectDirectory/AdForgePackageVer4/ad_data.json b/ProjectDirectory/AdForgePackageVer4/ad_data.json
++new file mode 100644
++--- /dev/null	(date 1716450986539)
+++++ b/ProjectDirectory/AdForgePackageVer4/ad_data.json	(date 1716450986539)
++@@ -0,0 +1,47 @@
+++[
+++    {
+++        "creation_date": "2024-05-23T12:56:26.538036",
+++        "version": 2,
+++        "headline": "Открылся новый книжный магазин",
+++        "audience": "Читатели книг",
+++        "key_benefits": "",
+++        "call_to_action": "",
+++        "style": "",
+++        "length_limit": null,
+++        "model_name": "google/gemma-1.1-7b-it",
+++        "provider": "HuggingChat",
+++        "temperature": 0.7,
+++        "stream": false,
+++        "ad_text": "\"Погрузитесь в эtherealный мирpage книг! В нашем новом книжном магазине вы найдете широкий выбор книг для каждого. От захватывающих романов до степенных научных работ. Собирайте свою колоску книг, тогда вы всегда можете погрузиться в свои любимые истории. Приходите в наш магазин и позвольте себеctствовать мир книг!\""
+++    },
+++    {
+++        "creation_date": "2024-05-22T18:35:21.600260",
+++        "version": 1,
+++        "headline": "Открылся интернет магазин с сувенирами из европы",
+++        "audience": "Любители туризма",
+++        "key_benefits": "",
+++        "call_to_action": "",
+++        "style": "",
+++        "length_limit": null,
+++        "model_name": "gpt-3.5-turbo-0125",
+++        "provider": "Ecosia",
+++        "temperature": 0.8,
+++        "stream": true,
+++        "ad_text": "\"Интернет-магазин сувениров из Европы! Отличный выбор для любителей туризма. Заходите прямо сейчас!\""
+++    },
+++    {
+++        "creation_date": "2024-05-23T10:07:45.188985",
+++        "version": 1,
+++        "headline": "Открылся новый книжный магазин",
+++        "audience": "Любители книг",
+++        "key_benefits": "Низкие цены, зарубежные авторы",
+++        "call_to_action": "Приходите к нам за лучшими книгами в городе",
+++        "style": "",
+++        "length_limit": null,
+++        "model_name": "google/gemma-1.1-7b-it",
+++        "provider": "HuggingChat",
+++        "temperature": 0.7,
+++        "stream": true,
+++        "ad_text": "**Открылся новый книжный магазин! **\n\nДоsetTimeout lovers книг! 📚 Помимо привычных книг, мы в ассортименте имеют множество иностранных авторов! 🌎 Огромный выбор по доступным ценам! 🤑 Приходите к нам за лучшими книгами в городе! 🎁 #Книги #Магазин #Открытие"
+++    }
+++]
++\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"796fc669-37c1-490b-a924-89e3ff67fe70\" name=\"Changes\" comment=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\">\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/__init__.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_data.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_generator.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/config.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AdForgeUI/images/collapse.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AdForgeUI/images/collapse.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Madic228&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Madic228/AdForgeAI.git&quot;,\r\n    &quot;accountId&quot;: &quot;6c32c3af-5d99-4ca0-a10f-089c9bb67de8&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2fthkWYRQ1S4lak2O3SLGXQaodI\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Python.HuggingChat.executor\": \"Run\",\r\n    \"Python.You.executor\": \"Run\",\r\n    \"Python.__init__ (1).executor\": \"Run\",\r\n    \"Python.__init__.executor\": \"Run\",\r\n    \"Python.access1.executor\": \"Run\",\r\n    \"Python.access2.executor\": \"Run\",\r\n    \"Python.access3.executor\": \"Run\",\r\n    \"Python.access4.executor\": \"Run\",\r\n    \"Python.access5.executor\": \"Run\",\r\n    \"Python.ad_editor.executor\": \"Run\",\r\n    \"Python.g4f_utils.executor\": \"Run\",\r\n    \"Python.main (1).executor\": \"Run\",\r\n    \"Python.main (2).executor\": \"Run\",\r\n    \"Python.main (3).executor\": \"Run\",\r\n    \"Python.main (4).executor\": \"Run\",\r\n    \"Python.main.executor\": \"Run\",\r\n    \"Python.main_claude.executor\": \"Run\",\r\n    \"Python.main_logic.executor\": \"Run\",\r\n    \"Python.maintest.executor\": \"Run\",\r\n    \"Python.maintest1.executor\": \"Run\",\r\n    \"Python.test.executor\": \"Run\",\r\n    \"Python.test1.executor\": \"Run\",\r\n    \"Python.test2 (1).executor\": \"Run\",\r\n    \"Python.test2.executor\": \"Run\",\r\n    \"Python.test3.executor\": \"Run\",\r\n    \"Python.test_providers_and_models.executor\": \"Run\",\r\n    \"Python.testopenai.executor\": \"Run\",\r\n    \"Python.testopenai2.executor\": \"Run\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"last_opened_file_path\": \"C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory\",\r\n    \"settings.editor.selected.configurable\": \"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\" />\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\\AdForgePackageVer3\" />\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\\AdForgePackageVer2\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.main (4)\">\r\n    <configuration name=\"ad_editor\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_editor.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (1)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/AdForgeUI\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/AdForgeUI/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (2)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (3)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (4)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.main (4)\" />\r\n        <item itemvalue=\"Python.main (2)\" />\r\n        <item itemvalue=\"Python.main (3)\" />\r\n        <item itemvalue=\"Python.main (1)\" />\r\n        <item itemvalue=\"Python.ad_editor\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"796fc669-37c1-490b-a924-89e3ff67fe70\" name=\"Changes\" comment=\"\" />\r\n      <created>1714626424967</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1714626424967</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Удаление старых папок и тестириуемых скриптов\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716286648792</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716286648792</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Добавление логики для изменения объявления + запись в Json ver2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716369806695</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716369806695</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Улучшение режима редактирования объявления\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716372318124</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716372318124</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Добавление истории объявлений\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716373036333</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716373036333</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Фикс ошибки указания версии в json файле\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716377698844</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716377698844</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Добавление обработки ошибок, связанных с эмодзи (юникодом)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716378304948</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716378304948</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Обновление сохранения в json истории объявлений\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716379891780</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716379891780</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Обновление логики моделей\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716382505346</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716382505346</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Добавление подзагрузки провайдера\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716383922795</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716383922795</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716385267436</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716385267436</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Удаление старых папок и тестириуемых скриптов\" />\r\n    <MESSAGE value=\"Добавление логики для изменения объявления + запись в Json ver2\" />\r\n    <MESSAGE value=\"Улучшение режима редактирования объявления\" />\r\n    <MESSAGE value=\"Добавление истории объявлений\" />\r\n    <MESSAGE value=\"Фикс ошибки указания версии в json файле\" />\r\n    <MESSAGE value=\"Добавление обработки ошибок, связанных с эмодзи (юникодом)\" />\r\n    <MESSAGE value=\"Обновление сохранения в json истории объявлений\" />\r\n    <MESSAGE value=\"Обновление логики моделей\" />\r\n    <MESSAGE value=\"Добавление подзагрузки провайдера\" />\r\n    <MESSAGE value=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision bfe08ac2230dd712540279521765fd9c9dbf4189)
++++ b/.idea/workspace.xml	(date 1716452793657)
+@@ -5,16 +5,20 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Изменение логики ad_editor.py - все работает через функции и ретюрны,">
+-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/__init__.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_data.json" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_generator.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/config.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_12_57_[Changes]/shelved.patch" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_12_57__Changes_.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_10_[Changes]/shelved.patch" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_10__Changes_.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]/shelved.patch" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]1/shelved.patch" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11__Changes_.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11__Changes_1.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_13_[Changes]/shelved.patch" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_13__Changes_.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/ad_data.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_data.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/ad_data.json" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AdForgeUI/images/collapse.png" beforeDir="false" afterPath="$PROJECT_DIR$/AdForgeUI/images/collapse.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -35,6 +39,7 @@
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory">{
+   &quot;lastFilter&quot;: {
+@@ -57,43 +62,43 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Python.HuggingChat.executor": "Run",
+-    "Python.You.executor": "Run",
+-    "Python.__init__ (1).executor": "Run",
+-    "Python.__init__.executor": "Run",
+-    "Python.access1.executor": "Run",
+-    "Python.access2.executor": "Run",
+-    "Python.access3.executor": "Run",
+-    "Python.access4.executor": "Run",
+-    "Python.access5.executor": "Run",
+-    "Python.ad_editor.executor": "Run",
+-    "Python.g4f_utils.executor": "Run",
+-    "Python.main (1).executor": "Run",
+-    "Python.main (2).executor": "Run",
+-    "Python.main (3).executor": "Run",
+-    "Python.main (4).executor": "Run",
+-    "Python.main.executor": "Run",
+-    "Python.main_claude.executor": "Run",
+-    "Python.main_logic.executor": "Run",
+-    "Python.maintest.executor": "Run",
+-    "Python.maintest1.executor": "Run",
+-    "Python.test.executor": "Run",
+-    "Python.test1.executor": "Run",
+-    "Python.test2 (1).executor": "Run",
+-    "Python.test2.executor": "Run",
+-    "Python.test3.executor": "Run",
+-    "Python.test_providers_and_models.executor": "Run",
+-    "Python.testopenai.executor": "Run",
+-    "Python.testopenai2.executor": "Run",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "master",
+-    "last_opened_file_path": "C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory",
+-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Python.HuggingChat.executor&quot;: &quot;Run&quot;,
++    &quot;Python.You.executor&quot;: &quot;Run&quot;,
++    &quot;Python.__init__ (1).executor&quot;: &quot;Run&quot;,
++    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
++    &quot;Python.access1.executor&quot;: &quot;Run&quot;,
++    &quot;Python.access2.executor&quot;: &quot;Run&quot;,
++    &quot;Python.access3.executor&quot;: &quot;Run&quot;,
++    &quot;Python.access4.executor&quot;: &quot;Run&quot;,
++    &quot;Python.access5.executor&quot;: &quot;Run&quot;,
++    &quot;Python.ad_editor.executor&quot;: &quot;Run&quot;,
++    &quot;Python.g4f_utils.executor&quot;: &quot;Run&quot;,
++    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
++    &quot;Python.main (2).executor&quot;: &quot;Run&quot;,
++    &quot;Python.main (3).executor&quot;: &quot;Run&quot;,
++    &quot;Python.main (4).executor&quot;: &quot;Run&quot;,
++    &quot;Python.main.executor&quot;: &quot;Run&quot;,
++    &quot;Python.main_claude.executor&quot;: &quot;Run&quot;,
++    &quot;Python.main_logic.executor&quot;: &quot;Run&quot;,
++    &quot;Python.maintest.executor&quot;: &quot;Run&quot;,
++    &quot;Python.maintest1.executor&quot;: &quot;Run&quot;,
++    &quot;Python.test.executor&quot;: &quot;Run&quot;,
++    &quot;Python.test1.executor&quot;: &quot;Run&quot;,
++    &quot;Python.test2 (1).executor&quot;: &quot;Run&quot;,
++    &quot;Python.test2.executor&quot;: &quot;Run&quot;,
++    &quot;Python.test3.executor&quot;: &quot;Run&quot;,
++    &quot;Python.test_providers_and_models.executor&quot;: &quot;Run&quot;,
++    &quot;Python.testopenai.executor&quot;: &quot;Run&quot;,
++    &quot;Python.testopenai2.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory" />
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_10__Changes_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_10__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_10__Changes_.xml
+new file mode 100644
+--- /dev/null	(date 1716452793571)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_10__Changes_.xml	(date 1716452793571)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Update_at_23_05_2024_13_10_[Changes]" date="1716451810148" recycled="false" toDelete="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_10_[Changes]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Update at 23.05.2024 13:10 [Changes]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_12_57__Changes_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_12_57__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_12_57__Changes_.xml
+new file mode 100644
+--- /dev/null	(date 1716452793563)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_12_57__Changes_.xml	(date 1716452793563)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Update_at_23_05_2024_12_57_[Changes]" date="1716451068138" recycled="true" deleted="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_12_57_[Changes]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Update at 23.05.2024 12:57 [Changes]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_10_[Changes]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_10_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_10_[Changes]/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1716451810139)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_10_[Changes]/shelved.patch	(date 1716451810139)
+@@ -0,0 +1,135 @@
++Index: ProjectDirectory/AdForgePackageVer4/ad_data.json
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/ProjectDirectory/AdForgePackageVer4/ad_data.json b/ProjectDirectory/AdForgePackageVer4/ad_data.json
++new file mode 100644
++--- /dev/null	(date 1716451067885)
+++++ b/ProjectDirectory/AdForgePackageVer4/ad_data.json	(date 1716451067885)
++@@ -0,0 +1,47 @@
+++[
+++    {
+++        "creation_date": "2024-05-23T12:56:26.538036",
+++        "version": 2,
+++        "headline": "Открылся новый книжный магазин",
+++        "audience": "Читатели книг",
+++        "key_benefits": "",
+++        "call_to_action": "",
+++        "style": "",
+++        "length_limit": null,
+++        "model_name": "google/gemma-1.1-7b-it",
+++        "provider": "HuggingChat",
+++        "temperature": 0.7,
+++        "stream": false,
+++        "ad_text": "\"Погрузитесь в эtherealный мирpage книг! В нашем новом книжном магазине вы найдете широкий выбор книг для каждого. От захватывающих романов до степенных научных работ. Собирайте свою колоску книг, тогда вы всегда можете погрузиться в свои любимые истории. Приходите в наш магазин и позвольте себеctствовать мир книг!\""
+++    },
+++    {
+++        "creation_date": "2024-05-22T18:35:21.600260",
+++        "version": 1,
+++        "headline": "Открылся интернет магазин с сувенирами из европы",
+++        "audience": "Любители туризма",
+++        "key_benefits": "",
+++        "call_to_action": "",
+++        "style": "",
+++        "length_limit": null,
+++        "model_name": "gpt-3.5-turbo-0125",
+++        "provider": "Ecosia",
+++        "temperature": 0.8,
+++        "stream": true,
+++        "ad_text": "\"Интернет-магазин сувениров из Европы! Отличный выбор для любителей туризма. Заходите прямо сейчас!\""
+++    },
+++    {
+++        "creation_date": "2024-05-23T10:07:45.188985",
+++        "version": 1,
+++        "headline": "Открылся новый книжный магазин",
+++        "audience": "Любители книг",
+++        "key_benefits": "Низкие цены, зарубежные авторы",
+++        "call_to_action": "Приходите к нам за лучшими книгами в городе",
+++        "style": "",
+++        "length_limit": null,
+++        "model_name": "google/gemma-1.1-7b-it",
+++        "provider": "HuggingChat",
+++        "temperature": 0.7,
+++        "stream": true,
+++        "ad_text": "**Открылся новый книжный магазин! **\n\nДоsetTimeout lovers книг! 📚 Помимо привычных книг, мы в ассортименте имеют множество иностранных авторов! 🌎 Огромный выбор по доступным ценам! 🤑 Приходите к нам за лучшими книгами в городе! 🎁 #Книги #Магазин #Открытие"
+++    }
+++]
++\ No newline at end of file
++Index: .idea/workspace.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"796fc669-37c1-490b-a924-89e3ff67fe70\" name=\"Changes\" comment=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\">\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/__init__.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_data.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_generator.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/config.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AdForgeUI/images/collapse.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AdForgeUI/images/collapse.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Madic228&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Madic228/AdForgeAI.git&quot;,\r\n    &quot;accountId&quot;: &quot;6c32c3af-5d99-4ca0-a10f-089c9bb67de8&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2fthkWYRQ1S4lak2O3SLGXQaodI\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Python.HuggingChat.executor\": \"Run\",\r\n    \"Python.You.executor\": \"Run\",\r\n    \"Python.__init__ (1).executor\": \"Run\",\r\n    \"Python.__init__.executor\": \"Run\",\r\n    \"Python.access1.executor\": \"Run\",\r\n    \"Python.access2.executor\": \"Run\",\r\n    \"Python.access3.executor\": \"Run\",\r\n    \"Python.access4.executor\": \"Run\",\r\n    \"Python.access5.executor\": \"Run\",\r\n    \"Python.ad_editor.executor\": \"Run\",\r\n    \"Python.g4f_utils.executor\": \"Run\",\r\n    \"Python.main (1).executor\": \"Run\",\r\n    \"Python.main (2).executor\": \"Run\",\r\n    \"Python.main (3).executor\": \"Run\",\r\n    \"Python.main (4).executor\": \"Run\",\r\n    \"Python.main.executor\": \"Run\",\r\n    \"Python.main_claude.executor\": \"Run\",\r\n    \"Python.main_logic.executor\": \"Run\",\r\n    \"Python.maintest.executor\": \"Run\",\r\n    \"Python.maintest1.executor\": \"Run\",\r\n    \"Python.test.executor\": \"Run\",\r\n    \"Python.test1.executor\": \"Run\",\r\n    \"Python.test2 (1).executor\": \"Run\",\r\n    \"Python.test2.executor\": \"Run\",\r\n    \"Python.test3.executor\": \"Run\",\r\n    \"Python.test_providers_and_models.executor\": \"Run\",\r\n    \"Python.testopenai.executor\": \"Run\",\r\n    \"Python.testopenai2.executor\": \"Run\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"last_opened_file_path\": \"C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory\",\r\n    \"settings.editor.selected.configurable\": \"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\" />\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\\AdForgePackageVer3\" />\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\\AdForgePackageVer2\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.main (4)\">\r\n    <configuration name=\"ad_editor\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_editor.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (1)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/AdForgeUI\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/AdForgeUI/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (2)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (3)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (4)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.main (4)\" />\r\n        <item itemvalue=\"Python.main (2)\" />\r\n        <item itemvalue=\"Python.main (3)\" />\r\n        <item itemvalue=\"Python.main (1)\" />\r\n        <item itemvalue=\"Python.ad_editor\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"796fc669-37c1-490b-a924-89e3ff67fe70\" name=\"Changes\" comment=\"\" />\r\n      <created>1714626424967</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1714626424967</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Удаление старых папок и тестириуемых скриптов\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716286648792</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716286648792</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Добавление логики для изменения объявления + запись в Json ver2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716369806695</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716369806695</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Улучшение режима редактирования объявления\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716372318124</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716372318124</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Добавление истории объявлений\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716373036333</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716373036333</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Фикс ошибки указания версии в json файле\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716377698844</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716377698844</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Добавление обработки ошибок, связанных с эмодзи (юникодом)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716378304948</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716378304948</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Обновление сохранения в json истории объявлений\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716379891780</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716379891780</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Обновление логики моделей\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716382505346</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716382505346</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Добавление подзагрузки провайдера\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716383922795</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716383922795</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716385267436</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716385267436</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Удаление старых папок и тестириуемых скриптов\" />\r\n    <MESSAGE value=\"Добавление логики для изменения объявления + запись в Json ver2\" />\r\n    <MESSAGE value=\"Улучшение режима редактирования объявления\" />\r\n    <MESSAGE value=\"Добавление истории объявлений\" />\r\n    <MESSAGE value=\"Фикс ошибки указания версии в json файле\" />\r\n    <MESSAGE value=\"Добавление обработки ошибок, связанных с эмодзи (юникодом)\" />\r\n    <MESSAGE value=\"Обновление сохранения в json истории объявлений\" />\r\n    <MESSAGE value=\"Обновление логики моделей\" />\r\n    <MESSAGE value=\"Добавление подзагрузки провайдера\" />\r\n    <MESSAGE value=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\" />\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/workspace.xml b/.idea/workspace.xml
++--- a/.idea/workspace.xml	(revision bfe08ac2230dd712540279521765fd9c9dbf4189)
+++++ b/.idea/workspace.xml	(date 1716451740075)
++@@ -4,17 +4,9 @@
++     <option name="autoReloadType" value="SELECTIVE" />
++   </component>
++   <component name="ChangeListManager">
++-    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Изменение логики ad_editor.py - все работает через функции и ретюрны,">
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/__init__.py" afterDir="false" />
+++    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Добавление 4 версии генератора объявления, обновление установки версии объявления">
++       <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_data.json" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_generator.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/config.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py" afterDir="false" />
++       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/AdForgeUI/images/collapse.png" beforeDir="false" afterPath="$PROJECT_DIR$/AdForgeUI/images/collapse.png" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" afterDir="false" />
++     </list>
++     <option name="SHOW_DIALOG" value="false" />
++     <option name="HIGHLIGHT_CONFLICTS" value="true" />
++@@ -101,7 +93,7 @@
++       <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory\AdForgePackageVer2" />
++     </key>
++   </component>
++-  <component name="RunManager" selected="Python.main (4)">
+++  <component name="RunManager" selected="Python.main (1)">
++     <configuration name="ad_editor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++       <module name="CreatingAdAI" />
++       <option name="ENV_FILES" value="" />
++@@ -214,10 +206,10 @@
++     </configuration>
++     <recent_temporary>
++       <list>
+++        <item itemvalue="Python.main (1)" />
++         <item itemvalue="Python.main (4)" />
++         <item itemvalue="Python.main (2)" />
++         <item itemvalue="Python.main (3)" />
++-        <item itemvalue="Python.main (1)" />
++         <item itemvalue="Python.ad_editor" />
++       </list>
++     </recent_temporary>
++@@ -318,7 +310,15 @@
++       <option name="project" value="LOCAL" />
++       <updated>1716385267436</updated>
++     </task>
++-    <option name="localTasksCounter" value="11" />
+++    <task id="LOCAL-00011" summary="Добавление 4 версии генератора объявления, обновление установки версии объявления">
+++      <option name="closed" value="true" />
+++      <created>1716451053657</created>
+++      <option name="number" value="00011" />
+++      <option name="presentableId" value="LOCAL-00011" />
+++      <option name="project" value="LOCAL" />
+++      <updated>1716451053657</updated>
+++    </task>
+++    <option name="localTasksCounter" value="12" />
++     <servers />
++   </component>
++   <component name="Vcs.Log.Tabs.Properties">
++@@ -343,6 +343,7 @@
++     <MESSAGE value="Обновление логики моделей" />
++     <MESSAGE value="Добавление подзагрузки провайдера" />
++     <MESSAGE value="Изменение логики ad_editor.py - все работает через функции и ретюрны," />
++-    <option name="LAST_COMMIT_MESSAGE" value="Изменение логики ad_editor.py - все работает через функции и ретюрны," />
+++    <MESSAGE value="Добавление 4 версии генератора объявления, обновление установки версии объявления" />
+++    <option name="LAST_COMMIT_MESSAGE" value="Добавление 4 версии генератора объявления, обновление установки версии объявления" />
++   </component>
++ </project>
++\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11__Changes_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11__Changes_.xml
+new file mode 100644
+--- /dev/null	(date 1716452793581)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11__Changes_.xml	(date 1716452793581)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]" date="1716451865263" recycled="false" toDelete="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Update at 23.05.2024 13:11 [Changes]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11__Changes_1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11__Changes_1.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11__Changes_1.xml
+new file mode 100644
+--- /dev/null	(date 1716452793589)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11__Changes_1.xml	(date 1716452793589)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]1" date="1716451894198" recycled="false" toDelete="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]1/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Update at 23.05.2024 13:11 [Changes]" />
++</changelist>
+\ No newline at end of file
+Index: ProjectDirectory/AdForgePackageVer2/ad_data.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ProjectDirectory/AdForgePackageVer2/ad_data.json b/ProjectDirectory/AdForgePackageVer2/ad_data.json
+new file mode 100644
+--- /dev/null	(date 1716449211516)
++++ b/ProjectDirectory/AdForgePackageVer2/ad_data.json	(date 1716449211516)
+@@ -0,0 +1,62 @@
++[
++    {
++        "creation_date": "2024-05-22T18:17:57.696302",
++        "version": 2,
++        "headline": "Открытие нового оружейного магазина",
++        "audience": "Мужчина 35+",
++        "key_benefits": "",
++        "call_to_action": "",
++        "style": "",
++        "length_limit": null,
++        "model_name": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
++        "provider": "HuggingChat",
++        "temperature": 0.8,
++        "stream": false,
++        "ad_text": "**Открытие нового оружейного магазина**\n\nМужчины, старше 35 лет, сейчас захватите свой шанс!\n\nВыбирайте из лучшего ассортимента оружия и аксессуаров на рынке.\n\nС 15 августа наша новая оружейная коллекция готова вас порадовать.\n\nПриходите и выбирайте качественное оружие и аксессуары, которые вам понравятся.\n\nОткройте для себя наш магазин и станьте нашим постоянным клиентом."
++    },
++    {
++        "creation_date": "2024-05-22T18:36:23.304843",
++        "version": 1,
++        "headline": "интернет магазин сувениров из европы",
++        "audience": "Любители путешествовать",
++        "key_benefits": "",
++        "call_to_action": "",
++        "style": "",
++        "length_limit": 400,
++        "model_name": "gpt-3.5-turbo-0125",
++        "provider": "Ecosia",
++        "temperature": 0.7,
++        "stream": false,
++        "ad_text": "Путешествуй по Европе не выходя из дома! Интернет-магазин сувениров из Европы предлагает уникальные подарки и сувениры прямо к вам. Отличные подарки для любителей путешествий. Посетите наш сайт сейчас!"
++    },
++    {
++        "creation_date": "2024-05-23T12:20:21.006730",
++        "version": 1,
++        "headline": "Открылся книжный магазин",
++        "audience": "Любители книг",
++        "key_benefits": "",
++        "call_to_action": "",
++        "style": "",
++        "length_limit": null,
++        "model_name": "gpt-3.5-turbo-0125",
++        "provider": "Ecosia",
++        "temperature": 0.7,
++        "stream": false,
++        "ad_text": "\"Погрузитесь в мир книг! Откройте для себя наш новый книжный магазин с огромным выбором литературы. Приходите и найдите свою следующую любимую книгу уже сегодня!\""
++    },
++    {
++        "creation_date": "2024-05-23T12:26:51.515981",
++        "version": 3,
++        "headline": "Открылся парфюмерный магазин",
++        "audience": "Влюбленные парочки",
++        "key_benefits": "",
++        "call_to_action": "",
++        "style": "",
++        "length_limit": null,
++        "model_name": "claude-3-haiku-20240307",
++        "provider": "DuckDuckGo",
++        "temperature": 0.7,
++        "stream": false,
++        "ad_text": "💑💖 Погрузитесь в мир ароматов вместе!\n\nНовый парфюмерный магазин приглашает \nвлюбленные парочки на удивительное \nпутешествие по миру запахов.\n\nОткройте для себя идеальный аромат \nдля своего особенного момента вместе!\n\nПосетите нас по адресу: [вставьте адрес].\n\nАвтор: [ваше имя]\n\n#парфюм #любовь #магазинароматов 💖🌹"
++    }
++]
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1716451865261)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]/shelved.patch	(date 1716451865261)
+@@ -0,0 +1,78 @@
++Index: .idea/workspace.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"796fc669-37c1-490b-a924-89e3ff67fe70\" name=\"Changes\" comment=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\">\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/__init__.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_data.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_generator.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/config.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AdForgeUI/images/collapse.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AdForgeUI/images/collapse.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Madic228&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Madic228/AdForgeAI.git&quot;,\r\n    &quot;accountId&quot;: &quot;6c32c3af-5d99-4ca0-a10f-089c9bb67de8&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2fthkWYRQ1S4lak2O3SLGXQaodI\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Python.HuggingChat.executor\": \"Run\",\r\n    \"Python.You.executor\": \"Run\",\r\n    \"Python.__init__ (1).executor\": \"Run\",\r\n    \"Python.__init__.executor\": \"Run\",\r\n    \"Python.access1.executor\": \"Run\",\r\n    \"Python.access2.executor\": \"Run\",\r\n    \"Python.access3.executor\": \"Run\",\r\n    \"Python.access4.executor\": \"Run\",\r\n    \"Python.access5.executor\": \"Run\",\r\n    \"Python.ad_editor.executor\": \"Run\",\r\n    \"Python.g4f_utils.executor\": \"Run\",\r\n    \"Python.main (1).executor\": \"Run\",\r\n    \"Python.main (2).executor\": \"Run\",\r\n    \"Python.main (3).executor\": \"Run\",\r\n    \"Python.main (4).executor\": \"Run\",\r\n    \"Python.main.executor\": \"Run\",\r\n    \"Python.main_claude.executor\": \"Run\",\r\n    \"Python.main_logic.executor\": \"Run\",\r\n    \"Python.maintest.executor\": \"Run\",\r\n    \"Python.maintest1.executor\": \"Run\",\r\n    \"Python.test.executor\": \"Run\",\r\n    \"Python.test1.executor\": \"Run\",\r\n    \"Python.test2 (1).executor\": \"Run\",\r\n    \"Python.test2.executor\": \"Run\",\r\n    \"Python.test3.executor\": \"Run\",\r\n    \"Python.test_providers_and_models.executor\": \"Run\",\r\n    \"Python.testopenai.executor\": \"Run\",\r\n    \"Python.testopenai2.executor\": \"Run\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"last_opened_file_path\": \"C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory\",\r\n    \"settings.editor.selected.configurable\": \"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\" />\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\\AdForgePackageVer3\" />\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\\AdForgePackageVer2\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.main (4)\">\r\n    <configuration name=\"ad_editor\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_editor.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (1)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/AdForgeUI\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/AdForgeUI/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (2)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (3)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (4)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.main (4)\" />\r\n        <item itemvalue=\"Python.main (2)\" />\r\n        <item itemvalue=\"Python.main (3)\" />\r\n        <item itemvalue=\"Python.main (1)\" />\r\n        <item itemvalue=\"Python.ad_editor\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"796fc669-37c1-490b-a924-89e3ff67fe70\" name=\"Changes\" comment=\"\" />\r\n      <created>1714626424967</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1714626424967</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Удаление старых папок и тестириуемых скриптов\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716286648792</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716286648792</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Добавление логики для изменения объявления + запись в Json ver2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716369806695</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716369806695</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Улучшение режима редактирования объявления\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716372318124</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716372318124</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Добавление истории объявлений\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716373036333</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716373036333</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Фикс ошибки указания версии в json файле\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716377698844</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716377698844</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Добавление обработки ошибок, связанных с эмодзи (юникодом)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716378304948</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716378304948</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Обновление сохранения в json истории объявлений\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716379891780</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716379891780</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Обновление логики моделей\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716382505346</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716382505346</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Добавление подзагрузки провайдера\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716383922795</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716383922795</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716385267436</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716385267436</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Удаление старых папок и тестириуемых скриптов\" />\r\n    <MESSAGE value=\"Добавление логики для изменения объявления + запись в Json ver2\" />\r\n    <MESSAGE value=\"Улучшение режима редактирования объявления\" />\r\n    <MESSAGE value=\"Добавление истории объявлений\" />\r\n    <MESSAGE value=\"Фикс ошибки указания версии в json файле\" />\r\n    <MESSAGE value=\"Добавление обработки ошибок, связанных с эмодзи (юникодом)\" />\r\n    <MESSAGE value=\"Обновление сохранения в json истории объявлений\" />\r\n    <MESSAGE value=\"Обновление логики моделей\" />\r\n    <MESSAGE value=\"Добавление подзагрузки провайдера\" />\r\n    <MESSAGE value=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\" />\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/workspace.xml b/.idea/workspace.xml
++--- a/.idea/workspace.xml	(revision bfe08ac2230dd712540279521765fd9c9dbf4189)
+++++ b/.idea/workspace.xml	(date 1716451833763)
++@@ -4,18 +4,7 @@
++     <option name="autoReloadType" value="SELECTIVE" />
++   </component>
++   <component name="ChangeListManager">
++-    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Изменение логики ad_editor.py - все работает через функции и ретюрны,">
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/__init__.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_data.json" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_generator.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/config.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/AdForgeUI/images/collapse.png" beforeDir="false" afterPath="$PROJECT_DIR$/AdForgeUI/images/collapse.png" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" afterDir="false" />
++-    </list>
+++    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Добавление 4 версии генератора объявления, обновление установки версии объявления" />
++     <option name="SHOW_DIALOG" value="false" />
++     <option name="HIGHLIGHT_CONFLICTS" value="true" />
++     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++@@ -101,7 +90,7 @@
++       <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory\AdForgePackageVer2" />
++     </key>
++   </component>
++-  <component name="RunManager" selected="Python.main (4)">
+++  <component name="RunManager" selected="Python.main (1)">
++     <configuration name="ad_editor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++       <module name="CreatingAdAI" />
++       <option name="ENV_FILES" value="" />
++@@ -214,10 +203,10 @@
++     </configuration>
++     <recent_temporary>
++       <list>
+++        <item itemvalue="Python.main (1)" />
++         <item itemvalue="Python.main (4)" />
++         <item itemvalue="Python.main (2)" />
++         <item itemvalue="Python.main (3)" />
++-        <item itemvalue="Python.main (1)" />
++         <item itemvalue="Python.ad_editor" />
++       </list>
++     </recent_temporary>
++@@ -318,7 +307,15 @@
++       <option name="project" value="LOCAL" />
++       <updated>1716385267436</updated>
++     </task>
++-    <option name="localTasksCounter" value="11" />
+++    <task id="LOCAL-00011" summary="Добавление 4 версии генератора объявления, обновление установки версии объявления">
+++      <option name="closed" value="true" />
+++      <created>1716451053657</created>
+++      <option name="number" value="00011" />
+++      <option name="presentableId" value="LOCAL-00011" />
+++      <option name="project" value="LOCAL" />
+++      <updated>1716451053657</updated>
+++    </task>
+++    <option name="localTasksCounter" value="12" />
++     <servers />
++   </component>
++   <component name="Vcs.Log.Tabs.Properties">
++@@ -343,6 +340,7 @@
++     <MESSAGE value="Обновление логики моделей" />
++     <MESSAGE value="Добавление подзагрузки провайдера" />
++     <MESSAGE value="Изменение логики ad_editor.py - все работает через функции и ретюрны," />
++-    <option name="LAST_COMMIT_MESSAGE" value="Изменение логики ad_editor.py - все работает через функции и ретюрны," />
+++    <MESSAGE value="Добавление 4 версии генератора объявления, обновление установки версии объявления" />
+++    <option name="LAST_COMMIT_MESSAGE" value="Добавление 4 версии генератора объявления, обновление установки версии объявления" />
++   </component>
++ </project>
++\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]1/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]1/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]1/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1716451894197)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_11_[Changes]1/shelved.patch	(date 1716451894197)
+@@ -0,0 +1,158 @@
++Index: .idea/workspace.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"796fc669-37c1-490b-a924-89e3ff67fe70\" name=\"Changes\" comment=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\">\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/__init__.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_data.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_generator.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/config.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AdForgeUI/images/collapse.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AdForgeUI/images/collapse.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Madic228&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Madic228/AdForgeAI.git&quot;,\r\n    &quot;accountId&quot;: &quot;6c32c3af-5d99-4ca0-a10f-089c9bb67de8&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2fthkWYRQ1S4lak2O3SLGXQaodI\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Python.HuggingChat.executor\": \"Run\",\r\n    \"Python.You.executor\": \"Run\",\r\n    \"Python.__init__ (1).executor\": \"Run\",\r\n    \"Python.__init__.executor\": \"Run\",\r\n    \"Python.access1.executor\": \"Run\",\r\n    \"Python.access2.executor\": \"Run\",\r\n    \"Python.access3.executor\": \"Run\",\r\n    \"Python.access4.executor\": \"Run\",\r\n    \"Python.access5.executor\": \"Run\",\r\n    \"Python.ad_editor.executor\": \"Run\",\r\n    \"Python.g4f_utils.executor\": \"Run\",\r\n    \"Python.main (1).executor\": \"Run\",\r\n    \"Python.main (2).executor\": \"Run\",\r\n    \"Python.main (3).executor\": \"Run\",\r\n    \"Python.main (4).executor\": \"Run\",\r\n    \"Python.main.executor\": \"Run\",\r\n    \"Python.main_claude.executor\": \"Run\",\r\n    \"Python.main_logic.executor\": \"Run\",\r\n    \"Python.maintest.executor\": \"Run\",\r\n    \"Python.maintest1.executor\": \"Run\",\r\n    \"Python.test.executor\": \"Run\",\r\n    \"Python.test1.executor\": \"Run\",\r\n    \"Python.test2 (1).executor\": \"Run\",\r\n    \"Python.test2.executor\": \"Run\",\r\n    \"Python.test3.executor\": \"Run\",\r\n    \"Python.test_providers_and_models.executor\": \"Run\",\r\n    \"Python.testopenai.executor\": \"Run\",\r\n    \"Python.testopenai2.executor\": \"Run\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"last_opened_file_path\": \"C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory\",\r\n    \"settings.editor.selected.configurable\": \"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\" />\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\\AdForgePackageVer3\" />\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\\AdForgePackageVer2\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.main (4)\">\r\n    <configuration name=\"ad_editor\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_editor.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (1)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/AdForgeUI\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/AdForgeUI/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (2)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (3)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (4)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.main (4)\" />\r\n        <item itemvalue=\"Python.main (2)\" />\r\n        <item itemvalue=\"Python.main (3)\" />\r\n        <item itemvalue=\"Python.main (1)\" />\r\n        <item itemvalue=\"Python.ad_editor\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"796fc669-37c1-490b-a924-89e3ff67fe70\" name=\"Changes\" comment=\"\" />\r\n      <created>1714626424967</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1714626424967</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Удаление старых папок и тестириуемых скриптов\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716286648792</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716286648792</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Добавление логики для изменения объявления + запись в Json ver2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716369806695</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716369806695</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Улучшение режима редактирования объявления\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716372318124</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716372318124</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Добавление истории объявлений\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716373036333</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716373036333</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Фикс ошибки указания версии в json файле\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716377698844</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716377698844</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Добавление обработки ошибок, связанных с эмодзи (юникодом)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716378304948</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716378304948</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Обновление сохранения в json истории объявлений\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716379891780</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716379891780</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Обновление логики моделей\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716382505346</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716382505346</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Добавление подзагрузки провайдера\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716383922795</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716383922795</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716385267436</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716385267436</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Удаление старых папок и тестириуемых скриптов\" />\r\n    <MESSAGE value=\"Добавление логики для изменения объявления + запись в Json ver2\" />\r\n    <MESSAGE value=\"Улучшение режима редактирования объявления\" />\r\n    <MESSAGE value=\"Добавление истории объявлений\" />\r\n    <MESSAGE value=\"Фикс ошибки указания версии в json файле\" />\r\n    <MESSAGE value=\"Добавление обработки ошибок, связанных с эмодзи (юникодом)\" />\r\n    <MESSAGE value=\"Обновление сохранения в json истории объявлений\" />\r\n    <MESSAGE value=\"Обновление логики моделей\" />\r\n    <MESSAGE value=\"Добавление подзагрузки провайдера\" />\r\n    <MESSAGE value=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\" />\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/workspace.xml b/.idea/workspace.xml
++--- a/.idea/workspace.xml	(revision bfe08ac2230dd712540279521765fd9c9dbf4189)
+++++ b/.idea/workspace.xml	(date 1716451872457)
++@@ -4,18 +4,7 @@
++     <option name="autoReloadType" value="SELECTIVE" />
++   </component>
++   <component name="ChangeListManager">
++-    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Изменение логики ad_editor.py - все работает через функции и ретюрны,">
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/__init__.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_data.json" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_generator.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/config.py" afterDir="false" />
++-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/AdForgeUI/images/collapse.png" beforeDir="false" afterPath="$PROJECT_DIR$/AdForgeUI/images/collapse.png" afterDir="false" />
++-      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" afterDir="false" />
++-    </list>
+++    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Добавление 4 версии генератора объявления, обновление установки версии объявления" />
++     <option name="SHOW_DIALOG" value="false" />
++     <option name="HIGHLIGHT_CONFLICTS" value="true" />
++     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++@@ -57,43 +46,43 @@
++     <option name="hideEmptyMiddlePackages" value="true" />
++     <option name="showLibraryContents" value="true" />
++   </component>
++-  <component name="PropertiesComponent"><![CDATA[{
++-  "keyToString": {
++-    "Python.HuggingChat.executor": "Run",
++-    "Python.You.executor": "Run",
++-    "Python.__init__ (1).executor": "Run",
++-    "Python.__init__.executor": "Run",
++-    "Python.access1.executor": "Run",
++-    "Python.access2.executor": "Run",
++-    "Python.access3.executor": "Run",
++-    "Python.access4.executor": "Run",
++-    "Python.access5.executor": "Run",
++-    "Python.ad_editor.executor": "Run",
++-    "Python.g4f_utils.executor": "Run",
++-    "Python.main (1).executor": "Run",
++-    "Python.main (2).executor": "Run",
++-    "Python.main (3).executor": "Run",
++-    "Python.main (4).executor": "Run",
++-    "Python.main.executor": "Run",
++-    "Python.main_claude.executor": "Run",
++-    "Python.main_logic.executor": "Run",
++-    "Python.maintest.executor": "Run",
++-    "Python.maintest1.executor": "Run",
++-    "Python.test.executor": "Run",
++-    "Python.test1.executor": "Run",
++-    "Python.test2 (1).executor": "Run",
++-    "Python.test2.executor": "Run",
++-    "Python.test3.executor": "Run",
++-    "Python.test_providers_and_models.executor": "Run",
++-    "Python.testopenai.executor": "Run",
++-    "Python.testopenai2.executor": "Run",
++-    "RunOnceActivity.OpenProjectViewOnStart": "true",
++-    "RunOnceActivity.ShowReadmeOnStart": "true",
++-    "git-widget-placeholder": "master",
++-    "last_opened_file_path": "C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory",
++-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+++  <component name="PropertiesComponent">{
+++  &quot;keyToString&quot;: {
+++    &quot;Python.HuggingChat.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.You.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.__init__ (1).executor&quot;: &quot;Run&quot;,
+++    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.access1.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.access2.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.access3.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.access4.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.access5.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.ad_editor.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.g4f_utils.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main (2).executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main (3).executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main (4).executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main_claude.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main_logic.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.maintest.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.maintest1.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.test1.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.test2 (1).executor&quot;: &quot;Run&quot;,
+++    &quot;Python.test2.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.test3.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.test_providers_and_models.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.testopenai.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.testopenai2.executor&quot;: &quot;Run&quot;,
+++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+++    &quot;last_opened_file_path&quot;: &quot;C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory&quot;,
+++    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
++   }
++-}]]></component>
+++}</component>
++   <component name="RecentsManager">
++     <key name="CopyFile.RECENT_KEYS">
++       <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory" />
++@@ -101,7 +90,7 @@
++       <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory\AdForgePackageVer2" />
++     </key>
++   </component>
++-  <component name="RunManager" selected="Python.main (4)">
+++  <component name="RunManager" selected="Python.main (1)">
++     <configuration name="ad_editor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++       <module name="CreatingAdAI" />
++       <option name="ENV_FILES" value="" />
++@@ -214,10 +203,10 @@
++     </configuration>
++     <recent_temporary>
++       <list>
+++        <item itemvalue="Python.main (1)" />
++         <item itemvalue="Python.main (4)" />
++         <item itemvalue="Python.main (2)" />
++         <item itemvalue="Python.main (3)" />
++-        <item itemvalue="Python.main (1)" />
++         <item itemvalue="Python.ad_editor" />
++       </list>
++     </recent_temporary>
++@@ -318,7 +307,15 @@
++       <option name="project" value="LOCAL" />
++       <updated>1716385267436</updated>
++     </task>
++-    <option name="localTasksCounter" value="11" />
+++    <task id="LOCAL-00011" summary="Добавление 4 версии генератора объявления, обновление установки версии объявления">
+++      <option name="closed" value="true" />
+++      <created>1716451053657</created>
+++      <option name="number" value="00011" />
+++      <option name="presentableId" value="LOCAL-00011" />
+++      <option name="project" value="LOCAL" />
+++      <updated>1716451053657</updated>
+++    </task>
+++    <option name="localTasksCounter" value="12" />
++     <servers />
++   </component>
++   <component name="Vcs.Log.Tabs.Properties">
++@@ -343,6 +340,7 @@
++     <MESSAGE value="Обновление логики моделей" />
++     <MESSAGE value="Добавление подзагрузки провайдера" />
++     <MESSAGE value="Изменение логики ad_editor.py - все работает через функции и ретюрны," />
++-    <option name="LAST_COMMIT_MESSAGE" value="Изменение логики ad_editor.py - все работает через функции и ретюрны," />
+++    <MESSAGE value="Добавление 4 версии генератора объявления, обновление установки версии объявления" />
+++    <option name="LAST_COMMIT_MESSAGE" value="Добавление 4 версии генератора объявления, обновление установки версии объявления" />
++   </component>
++ </project>
++\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_13_[Changes]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_13_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_13_[Changes]/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1716452015038)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_13_[Changes]/shelved.patch	(date 1716452015038)
+@@ -0,0 +1,111 @@
++Index: .idea/workspace.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"796fc669-37c1-490b-a924-89e3ff67fe70\" name=\"Changes\" comment=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\">\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/__init__.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_data.json\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_generator.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/config.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AdForgeUI/images/collapse.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AdForgeUI/images/collapse.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Madic228&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Madic228/AdForgeAI.git&quot;,\r\n    &quot;accountId&quot;: &quot;6c32c3af-5d99-4ca0-a10f-089c9bb67de8&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2fthkWYRQ1S4lak2O3SLGXQaodI\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Python.HuggingChat.executor\": \"Run\",\r\n    \"Python.You.executor\": \"Run\",\r\n    \"Python.__init__ (1).executor\": \"Run\",\r\n    \"Python.__init__.executor\": \"Run\",\r\n    \"Python.access1.executor\": \"Run\",\r\n    \"Python.access2.executor\": \"Run\",\r\n    \"Python.access3.executor\": \"Run\",\r\n    \"Python.access4.executor\": \"Run\",\r\n    \"Python.access5.executor\": \"Run\",\r\n    \"Python.ad_editor.executor\": \"Run\",\r\n    \"Python.g4f_utils.executor\": \"Run\",\r\n    \"Python.main (1).executor\": \"Run\",\r\n    \"Python.main (2).executor\": \"Run\",\r\n    \"Python.main (3).executor\": \"Run\",\r\n    \"Python.main (4).executor\": \"Run\",\r\n    \"Python.main.executor\": \"Run\",\r\n    \"Python.main_claude.executor\": \"Run\",\r\n    \"Python.main_logic.executor\": \"Run\",\r\n    \"Python.maintest.executor\": \"Run\",\r\n    \"Python.maintest1.executor\": \"Run\",\r\n    \"Python.test.executor\": \"Run\",\r\n    \"Python.test1.executor\": \"Run\",\r\n    \"Python.test2 (1).executor\": \"Run\",\r\n    \"Python.test2.executor\": \"Run\",\r\n    \"Python.test3.executor\": \"Run\",\r\n    \"Python.test_providers_and_models.executor\": \"Run\",\r\n    \"Python.testopenai.executor\": \"Run\",\r\n    \"Python.testopenai2.executor\": \"Run\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"last_opened_file_path\": \"C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory\",\r\n    \"settings.editor.selected.configurable\": \"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\" />\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\\AdForgePackageVer3\" />\r\n      <recent name=\"C:\\Users\\giric\\Music\\3 курс 1 семестр\\Python\\CreatingAdAI\\ProjectDirectory\\AdForgePackageVer2\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.main (4)\">\r\n    <configuration name=\"ad_editor\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_editor.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (1)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/AdForgeUI\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/AdForgeUI/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (2)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (3)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (4)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CreatingAdAI\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.main (4)\" />\r\n        <item itemvalue=\"Python.main (2)\" />\r\n        <item itemvalue=\"Python.main (3)\" />\r\n        <item itemvalue=\"Python.main (1)\" />\r\n        <item itemvalue=\"Python.ad_editor\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"796fc669-37c1-490b-a924-89e3ff67fe70\" name=\"Changes\" comment=\"\" />\r\n      <created>1714626424967</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1714626424967</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Удаление старых папок и тестириуемых скриптов\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716286648792</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716286648792</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Добавление логики для изменения объявления + запись в Json ver2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716369806695</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716369806695</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Улучшение режима редактирования объявления\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716372318124</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716372318124</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Добавление истории объявлений\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716373036333</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716373036333</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Фикс ошибки указания версии в json файле\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716377698844</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716377698844</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Добавление обработки ошибок, связанных с эмодзи (юникодом)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716378304948</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716378304948</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Обновление сохранения в json истории объявлений\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716379891780</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716379891780</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Обновление логики моделей\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716382505346</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716382505346</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Добавление подзагрузки провайдера\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716383922795</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716383922795</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716385267436</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716385267436</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Удаление старых папок и тестириуемых скриптов\" />\r\n    <MESSAGE value=\"Добавление логики для изменения объявления + запись в Json ver2\" />\r\n    <MESSAGE value=\"Улучшение режима редактирования объявления\" />\r\n    <MESSAGE value=\"Добавление истории объявлений\" />\r\n    <MESSAGE value=\"Фикс ошибки указания версии в json файле\" />\r\n    <MESSAGE value=\"Добавление обработки ошибок, связанных с эмодзи (юникодом)\" />\r\n    <MESSAGE value=\"Обновление сохранения в json истории объявлений\" />\r\n    <MESSAGE value=\"Обновление логики моделей\" />\r\n    <MESSAGE value=\"Добавление подзагрузки провайдера\" />\r\n    <MESSAGE value=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Изменение логики ad_editor.py - все работает через функции и ретюрны,\" />\r\n  </component>\r\n</project>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/.idea/workspace.xml b/.idea/workspace.xml
++--- a/.idea/workspace.xml	(revision bfe08ac2230dd712540279521765fd9c9dbf4189)
+++++ b/.idea/workspace.xml	(date 1716451974491)
++@@ -57,43 +57,43 @@
++     <option name="hideEmptyMiddlePackages" value="true" />
++     <option name="showLibraryContents" value="true" />
++   </component>
++-  <component name="PropertiesComponent"><![CDATA[{
++-  "keyToString": {
++-    "Python.HuggingChat.executor": "Run",
++-    "Python.You.executor": "Run",
++-    "Python.__init__ (1).executor": "Run",
++-    "Python.__init__.executor": "Run",
++-    "Python.access1.executor": "Run",
++-    "Python.access2.executor": "Run",
++-    "Python.access3.executor": "Run",
++-    "Python.access4.executor": "Run",
++-    "Python.access5.executor": "Run",
++-    "Python.ad_editor.executor": "Run",
++-    "Python.g4f_utils.executor": "Run",
++-    "Python.main (1).executor": "Run",
++-    "Python.main (2).executor": "Run",
++-    "Python.main (3).executor": "Run",
++-    "Python.main (4).executor": "Run",
++-    "Python.main.executor": "Run",
++-    "Python.main_claude.executor": "Run",
++-    "Python.main_logic.executor": "Run",
++-    "Python.maintest.executor": "Run",
++-    "Python.maintest1.executor": "Run",
++-    "Python.test.executor": "Run",
++-    "Python.test1.executor": "Run",
++-    "Python.test2 (1).executor": "Run",
++-    "Python.test2.executor": "Run",
++-    "Python.test3.executor": "Run",
++-    "Python.test_providers_and_models.executor": "Run",
++-    "Python.testopenai.executor": "Run",
++-    "Python.testopenai2.executor": "Run",
++-    "RunOnceActivity.OpenProjectViewOnStart": "true",
++-    "RunOnceActivity.ShowReadmeOnStart": "true",
++-    "git-widget-placeholder": "master",
++-    "last_opened_file_path": "C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory",
++-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+++  <component name="PropertiesComponent">{
+++  &quot;keyToString&quot;: {
+++    &quot;Python.HuggingChat.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.You.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.__init__ (1).executor&quot;: &quot;Run&quot;,
+++    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.access1.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.access2.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.access3.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.access4.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.access5.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.ad_editor.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.g4f_utils.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main (2).executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main (3).executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main (4).executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main_claude.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.main_logic.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.maintest.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.maintest1.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.test1.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.test2 (1).executor&quot;: &quot;Run&quot;,
+++    &quot;Python.test2.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.test3.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.test_providers_and_models.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.testopenai.executor&quot;: &quot;Run&quot;,
+++    &quot;Python.testopenai2.executor&quot;: &quot;Run&quot;,
+++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+++    &quot;last_opened_file_path&quot;: &quot;C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory&quot;,
+++    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
++   }
++-}]]></component>
+++}</component>
++   <component name="RecentsManager">
++     <key name="CopyFile.RECENT_KEYS">
++       <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory" />
++@@ -101,7 +101,7 @@
++       <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory\AdForgePackageVer2" />
++     </key>
++   </component>
++-  <component name="RunManager" selected="Python.main (4)">
+++  <component name="RunManager" selected="Python.main (1)">
++     <configuration name="ad_editor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++       <module name="CreatingAdAI" />
++       <option name="ENV_FILES" value="" />
++@@ -214,10 +214,10 @@
++     </configuration>
++     <recent_temporary>
++       <list>
+++        <item itemvalue="Python.main (1)" />
++         <item itemvalue="Python.main (4)" />
++         <item itemvalue="Python.main (2)" />
++         <item itemvalue="Python.main (3)" />
++-        <item itemvalue="Python.main (1)" />
++         <item itemvalue="Python.ad_editor" />
++       </list>
++     </recent_temporary>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_13__Changes_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_13__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_13__Changes_.xml
+new file mode 100644
+--- /dev/null	(date 1716452793595)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_13__Changes_.xml	(date 1716452793595)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Update_at_23_05_2024_13_13_[Changes]" date="1716452015039" recycled="false" toDelete="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2024_13_13_[Changes]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Update at 23.05.2024 13:13 [Changes]" />
++</changelist>
+\ No newline at end of file
+Index: ProjectDirectory/AdForgePackageVer3/ad_data.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ProjectDirectory/AdForgePackageVer3/ad_data.json b/ProjectDirectory/AdForgePackageVer3/ad_data.json
+new file mode 100644
+--- /dev/null	(date 1716440865232)
++++ b/ProjectDirectory/AdForgePackageVer3/ad_data.json	(date 1716440865232)
+@@ -0,0 +1,47 @@
++[
++    {
++        "creation_date": "2024-05-22T18:30:37.790534",
++        "version": 1,
++        "headline": "Открылся новый книжный магазин",
++        "audience": "Читатели книг",
++        "key_benefits": "",
++        "call_to_action": "",
++        "style": "",
++        "length_limit": null,
++        "model_name": "gpt-3.5-turbo-0125",
++        "provider": "Ecosia",
++        "temperature": 0.7,
++        "stream": false,
++        "ad_text": "\"Погрузитесь в мир книг! Новый книжный магазин ждет вас. Заходите прямо сейчас!\""
++    },
++    {
++        "creation_date": "2024-05-22T18:35:21.600260",
++        "version": 1,
++        "headline": "Открылся интернет магазин с сувенирами из европы",
++        "audience": "Любители туризма",
++        "key_benefits": "",
++        "call_to_action": "",
++        "style": "",
++        "length_limit": null,
++        "model_name": "gpt-3.5-turbo-0125",
++        "provider": "Ecosia",
++        "temperature": 0.8,
++        "stream": true,
++        "ad_text": "\"Интернет-магазин сувениров из Европы! Отличный выбор для любителей туризма. Заходите прямо сейчас!\""
++    },
++    {
++        "creation_date": "2024-05-23T10:07:45.188985",
++        "version": 1,
++        "headline": "Открылся новый книжный магазин",
++        "audience": "Любители книг",
++        "key_benefits": "Низкие цены, зарубежные авторы",
++        "call_to_action": "Приходите к нам за лучшими книгами в городе",
++        "style": "",
++        "length_limit": null,
++        "model_name": "google/gemma-1.1-7b-it",
++        "provider": "HuggingChat",
++        "temperature": 0.7,
++        "stream": true,
++        "ad_text": "**Открылся новый книжный магазин! **\n\nДоsetTimeout lovers книг! 📚 Помимо привычных книг, мы в ассортименте имеют множество иностранных авторов! 🌎 Огромный выбор по доступным ценам! 🤑 Приходите к нам за лучшими книгами в городе! 🎁 #Книги #Магазин #Открытие"
++    }
++]
+\ No newline at end of file
