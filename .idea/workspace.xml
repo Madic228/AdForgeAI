@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Добавление подзагрузки провайдера">
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/ad_editor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/ad_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/ad_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/main.py" afterDir="false" />
+    <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Изменение логики ad_editor.py - все работает через функции и ретюрны,">
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeUI/images/collapse.png" beforeDir="false" afterPath="$PROJECT_DIR$/AdForgeUI/images/collapse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -65,6 +73,7 @@
     "Python.main (1).executor": "Run",
     "Python.main (2).executor": "Run",
     "Python.main (3).executor": "Run",
+    "Python.main (4).executor": "Run",
     "Python.main.executor": "Run",
     "Python.main_claude.executor": "Run",
     "Python.main_logic.executor": "Run",
@@ -81,17 +90,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory/AdForgePackageVer3",
+    "last_opened_file_path": "C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory" />
       <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory\AdForgePackageVer3" />
       <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory\AdForgePackageVer2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (2)">
+  <component name="RunManager" selected="Python.main (4)">
     <configuration name="ad_editor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CreatingAdAI" />
       <option name="ENV_FILES" value="" />
@@ -180,7 +190,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (4)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CreatingAdAI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,11 +199,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackage" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackage/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -204,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (4)" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (3)" />
-        <item itemvalue="Python.ad_editor" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.ad_editor" />
       </list>
     </recent_temporary>
   </component>
@@ -300,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716383922795</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Изменение логики ad_editor.py - все работает через функции и ретюрны,">
+      <option name="closed" value="true" />
+      <created>1716385267436</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716385267436</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,6 +342,7 @@
     <MESSAGE value="Обновление сохранения в json истории объявлений" />
     <MESSAGE value="Обновление логики моделей" />
     <MESSAGE value="Добавление подзагрузки провайдера" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление подзагрузки провайдера" />
+    <MESSAGE value="Изменение логики ad_editor.py - все работает через функции и ретюрны," />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменение логики ad_editor.py - все работает через функции и ретюрны," />
   </component>
 </project>
