@@ -2,7 +2,9 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt, QPoint
 
 from ui_loader import load_ui
-from event_handlers import newGenToggle, uparrowToggle, downarrowToggle, slide_it, generationToggle, v_generationToggle, edit_ad
+from event_handlers import newGenToggle, uparrowToggle, downarrowToggle, slide_it, generationToggle, v_generationToggle, \
+    edit_ad, clear, save_ad_text, copy_ad_text
+
 
 class MyWindow(QMainWindow):
     def __init__(self):
@@ -32,6 +34,9 @@ class MyWindow(QMainWindow):
         self.slider = self.findChild(QSlider, 'slider')
         self.tempResTxt = self.findChild(QLabel, 'tempResTxt')
 
+        self.e_slider = self.findChild(QSlider, 'e_slider')
+        self.e_tempResTxt = self.findChild(QLabel, 'e_tempResTxt')
+
         # Настройка QSlider
         self.slider.setRange(0, 10)
         self.slider.setSingleStep(1)
@@ -40,10 +45,25 @@ class MyWindow(QMainWindow):
         # Обновляем QLabel с текущим значением слайдера в виде десятичного числа
         initial_value = self.slider.value() / 10.0
         self.tempResTxt.setText(f"{initial_value:.1f}")
+        self.e_tempResTxt.setText(f"{initial_value:.1f}")
+
         self.slider.valueChanged.connect(lambda value: slide_it(self, value))
+
+        # Настройка QSlider
+        self.e_slider.setRange(0, 10)
+        self.e_slider.setSingleStep(1)
+        self.e_slider.setValue(7)
+
+        self.slider.valueChanged.connect(lambda value: self.e_slider.setValue(value))
+        self.e_slider.valueChanged.connect(lambda value: slide_it(self, value))
+
+        #Очистка полей
+        self.clear = self.findChild(QPushButton, 'clearBtn')
+        self.clear.clicked.connect(lambda: clear(self))
 
         # Переопределение метода mousePressEvent
         self.slider.mousePressEvent = self.create_mouse_press_event(self.slider.mousePressEvent)
+        self.e_slider.mousePressEvent = self.create_mouse_press_event(self.e_slider.mousePressEvent)
 
         # Настройка кнопок управления окном
         self.setup_button('close', self.close_window)
@@ -93,6 +113,13 @@ class MyWindow(QMainWindow):
         self.e_potok = self.findChild(QComboBox, 'e_potokBox')
         self.e_slider = self.findChild(QSlider, 'e_slider')
         self.e_change = self.findChild(QLineEdit, 'e_changeEdit')
+
+        # Кнопки сохранения и копирования
+        self.save_btn = self.findChild(QPushButton, 'saveBtn')
+        self.save_btn.clicked.connect(lambda: save_ad_text(self))
+
+        self.copy_btn = self.findChild(QPushButton, 'copyBtn')
+        self.copy_btn.clicked.connect(lambda: copy_ad_text(self))
 
         # Инициализация для перетаскивания окна
         self.oldPos = self.pos()
