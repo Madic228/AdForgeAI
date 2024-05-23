@@ -1622,9 +1622,13 @@ border-radius:10px;
      <rect>
       <x>510</x>
       <y>140</y>
-      <width>221</width>
+      <width>211</width>
       <height>371</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #23252B;
+</string>
     </property>
     <widget class="QListWidget" name="adListWidget">
      <property name="geometry">
@@ -1635,6 +1639,10 @@ border-radius:10px;
        <height>181</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: #494949;
+</string>
+     </property>
     </widget>
     <widget class="QPushButton" name="viewAdButton">
      <property name="geometry">
@@ -1644,6 +1652,12 @@ border-radius:10px;
        <width>191</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:solid;
+border-radius:5px;
+background-color:#28F1A9;
+color:black;</string>
      </property>
      <property name="text">
       <string>Перейти</string>
@@ -1659,10 +1673,16 @@ border-radius:10px;
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>320</y>
+       <y>270</y>
        <width>75</width>
-       <height>23</height>
+       <height>25</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:solid;
+border-radius:5px;
+background-color:#795B5B;
+</string>
      </property>
      <property name="text">
       <string>Удалить</string>
@@ -1675,10 +1695,16 @@ border-radius:10px;
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>320</y>
-       <width>71</width>
-       <height>23</height>
+       <y>270</y>
+       <width>75</width>
+       <height>25</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: solid;
+border-radius:5px;
+background-color:#475F57;
+</string>
      </property>
      <property name="text">
       <string>Обновить</string>
