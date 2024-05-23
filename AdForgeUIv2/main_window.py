@@ -1,67 +1,14 @@
-import sys
-import asyncio
-import logging
-from PyQt5.QtCore import Qt, QEventLoop, QTimer
-from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QFrame, QSlider, QLabel, QLineEdit, QComboBox, \
-    QTextBrowser, QPushButton, QTextEdit
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import Qt, QPoint
 
 from ui_loader import load_ui
 from event_handlers import v_genToggle, newGenToggle, uparrowToggle, downarrowToggle, slide_it, generationToggle
-from ProjectDirectory.AdForgePackageVer4.ad_manager import AdManager
-from ProjectDirectory.AdForgePackageVer4.config import proxies
-
-
-def create_logger(path, widget: QTextEdit):
-    log = logging.getLogger('main')
-    log.setLevel(logging.DEBUG)
-
-    file_formatter = logging.Formatter(
-        ('#%(levelname)-s, %(pathname)s, line %(lineno)d, [%(asctime)s]: '
-         '%(message)s'), datefmt='%Y-%m-%d %H:%M:%S'
-    )
-    console_formatter = logging.Formatter(('#%(levelname)-s, %(pathname)s, '
-                                           'line %(lineno)d: %(message)s'))
-
-    log_window_formatter = logging.Formatter(
-        '#%(levelname)-s, %(message)s\n'
-    )
-
-    file_handler = logging.FileHandler(path, encoding='utf-8')
-    file_handler.setLevel(logging.DEBUG)
-    file_handler.setFormatter(file_formatter)
-
-    console_handler = logging.StreamHandler()
-    console_handler.setFormatter(console_formatter)
-    console_handler.setLevel(logging.DEBUG)
-
-    log_window_handler = logging.Handler()
-    log_window_handler.emit = lambda record: widget.insertPlainText(
-        log_window_handler.format(record)
-    )
-    log_window_handler.setLevel(logging.DEBUG)
-    log_window_handler.setFormatter(log_window_formatter)
-
-    log.addHandler(file_handler)
-    log.addHandler(console_handler)
-    log.addHandler(log_window_handler)
 
 
 class MyWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        # Логирование в текстовое поле
-        self.log_widget = QTextEdit(self)
-        self.log_widget.setReadOnly(True)
-        self.log_widget.setGeometry(10, 10, 600, 100)  # Adjust the size and position as needed
-        self.log_widget.setWindowTitle('Logs')
-        self.log_widget.show()
-        create_logger('app.log', self.log_widget)
-        self.logger = logging.getLogger('main')
-        self.logger.info("Приложение инициализировано")
-
         self.initUI()
-        self.ad_manager = AdManager(proxies=proxies)  # Инициализация AdManager
-        self.logger.info("AdManager инициализирован")
 
     def initUI(self):
         # Загрузка UI
@@ -103,7 +50,7 @@ class MyWindow(QMainWindow):
         self.setup_button('close', self.close_window)
         self.setup_button('collapse', self.minimize_window)
 
-        # TextFields
+        #TextFields
         self.v_headline = self.findChild(QLineEdit, 'v_headlineEdit')
         self.v_audience = self.findChild(QLineEdit, 'v_audienceEdit')
 
@@ -124,9 +71,8 @@ class MyWindow(QMainWindow):
         self.answer.hide()
 
         # Переключения страниц
-        # Переключения страниц
         self.generation = self.findChild(QPushButton, 'generationBtn')
-        self.generation.clicked.connect(lambda: asyncio.create_task(generationToggle(self)))  # Изменение здесь!
+        self.generation.clicked.connect(lambda: generationToggle(self))
 
         self.v_eneration = self.findChild(QPushButton, 'v_generationBtn')
         self.v_eneration.clicked.connect(lambda: v_genToggle(self))
@@ -142,11 +88,6 @@ class MyWindow(QMainWindow):
 
         # Инициализация для перетаскивания окна
         self.oldPos = self.pos()
-
-        self.logger.info("UI инициализирован")
-
-    async def run_generation_toggle(self):
-        await generationToggle(self)
 
     def create_mouse_press_event(self, original_mouse_press_event):
         def new_mouse_press_event(event):
@@ -174,28 +115,16 @@ class MyWindow(QMainWindow):
                 self.move(self.x() + delta.x(), self.y() + delta.y())
                 self.oldPos = event.globalPos()
 
+
     def setup_button(self, button_name, callback):
         button = self.findChild(QPushButton, button_name)
         if button is not None:
             button.clicked.connect(callback)
-            self.logger.info(f"Кнопка '{button_name}' привязана к функции {callback.__name__}")
         else:
-            self.logger.error(f"Кнопка '{button_name}' не найдена. Проверьте имя объекта в .ui файле")
+            print(f"Button '{button_name}' not found. Check the object name in your .ui file.")
 
     def close_window(self):
-        self.logger.info("Закрытие окна")
         self.close()
 
     def minimize_window(self):
-        self.logger.info("Сворачивание окна")
         self.showMinimized()
-
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    loop = QEventLoop(app)
-    asyncio.set_event_loop(loop)
-    window = MyWindow()
-    window.show()
-    with loop:
-        loop.run_forever()

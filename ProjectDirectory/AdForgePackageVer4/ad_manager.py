@@ -2,10 +2,10 @@ import json
 import datetime
 import g4f
 import sys
-from config import model_provider_map
+from ProjectDirectory.AdForgePackageVer4.config import model_provider_map
 import re
 
-from ad_generator import AdGenerator
+from ProjectDirectory.AdForgePackageVer4.ad_generator import AdGenerator
 
 class AdManager:
     def __init__(self, proxies=None):

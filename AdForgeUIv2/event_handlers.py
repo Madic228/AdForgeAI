@@ -1,8 +1,7 @@
 import asyncio
 import logging
+import requests
 from PyQt5.QtWidgets import QMessageBox
-from ProjectDirectory.AdForgePackageVer4.ad_manager import AdManager
-from ProjectDirectory.AdForgePackageVer4.config import proxies
 
 logger = logging.getLogger('main')
 
@@ -11,7 +10,7 @@ def slide_it(window, value):
     window.tempResTxt.setText(f"{decimal_value:.1f}")
     logger.info(f"Слайдер перемещен на значение: {decimal_value:.1f}")
 
-async def generationToggle(self):
+def generationToggle(self):
     logger.info("Кнопка 'Генерировать объявление' нажата")
     self.input_dialog.hide()
     self.v_input_dialog.hide()
@@ -20,7 +19,6 @@ async def generationToggle(self):
     self.answer.show()
 
     try:
-        logger.debug("Получение значений из текстовых полей")
         headline = self.headline.text()
         audience = self.audience.text()
         key_benefits = self.key.text()
@@ -31,36 +29,32 @@ async def generationToggle(self):
         temperature = self.slider.value() / 10.0
         stream = self.potok.currentText() == "Включить обработку"
 
-        logger.debug(f"Значения получены: headline={headline}, audience={audience}, key_benefits={key_benefits}, call_to_action={call_to_action}, style={style}, length_limit={length_limit}, model_choice={model_choice}, temperature={temperature}, stream={stream}")
+        payload = {
+            "headline": headline,
+            "audience": audience,
+            "key_benefits": key_benefits,
+            "call_to_action": call_to_action,
+            "style": style,
+            "length_limit": int(length_limit) if length_limit else None,
+            "model_choice": model_choice,
+            "temperature": temperature,
+            "stream": stream
+        }
 
-        self.ad_manager.set_basic_params(headline, audience)
-        self.ad_manager.set_advanced_params(
-            key_benefits=key_benefits,
-            call_to_action=call_to_action,
-            style=style,
-            length_limit=int(length_limit) if length_limit else None,
-            model_choice=model_choice,
-            temperature=temperature,
-            stream=stream
-        )
+        logger.info("Отправка POST запроса на сервер FastAPI")
+        response = requests.post("http://localhost:8000/generate_ad", json=payload)
 
-        logger.info("Параметры установлены, начинаем генерацию объявления")
-        await generate_and_display_ad(self)
+        if response.status_code == 200:
+            ad_text = response.json().get("ad_text", "")
+            self.result.setText(ad_text)
+            logger.info("Объявление успешно сгенерировано и получено от сервера")
+        else:
+            error_message = response.json().get("detail", "Неизвестная ошибка")
+            raise Exception(error_message)
 
     except Exception as e:
         logger.error(f"Ошибка: {e}")
         QMessageBox.warning(self, "Ошибка", f"Произошла ошибка: {e}")
-
-async def generate_and_display_ad(self):
-    try:
-        logger.info("Запуск генерации объявления")
-        ad_text = await self.ad_manager.generate_ad()
-        self.result.setText(ad_text)
-        logger.info("Объявление успешно сгенерировано")
-
-    except Exception as e:
-        logger.error(f"Ошибка при генерации объявления: {e}")
-        QMessageBox.warning(self, "Ошибка", f"Произошла ошибка при генерации объявления: {e}")
 
 def downarrowToggle(self):
     self.input_dialog.show()

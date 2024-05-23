@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796fc669-37c1-490b-a924-89e3ff67fe70" name="Changes" comment="Изменение логики ad_editor.py - все работает через функции и ретюрны,">
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdForgeUIv2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdForgeUIv2/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdForgeUI/images/collapse.png" beforeDir="false" afterPath="$PROJECT_DIR$/AdForgeUI/images/collapse.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeUI/event_handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdForgeUI/event_handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdForgeUI/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdForgeUI/main_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_editor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer4/ad_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,43 +54,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.HuggingChat.executor&quot;: &quot;Run&quot;,
-    &quot;Python.You.executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__ (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.access1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.access2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.access3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.access4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.access5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ad_editor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.g4f_utils.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (2).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (3).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (4).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main_claude.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main_logic.executor&quot;: &quot;Run&quot;,
-    &quot;Python.maintest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.maintest1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test2 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.test2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_providers_and_models.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testopenai.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testopenai2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.HuggingChat.executor": "Run",
+    "Python.You.executor": "Run",
+    "Python.__init__ (1).executor": "Run",
+    "Python.__init__.executor": "Run",
+    "Python.access1.executor": "Run",
+    "Python.access2.executor": "Run",
+    "Python.access3.executor": "Run",
+    "Python.access4.executor": "Run",
+    "Python.access5.executor": "Run",
+    "Python.ad_editor.executor": "Run",
+    "Python.g4f_utils.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main (2).executor": "Run",
+    "Python.main (3).executor": "Run",
+    "Python.main (4).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.main_claude.executor": "Run",
+    "Python.main_logic.executor": "Run",
+    "Python.main_window.executor": "Run",
+    "Python.maintest.executor": "Run",
+    "Python.maintest1.executor": "Run",
+    "Python.server.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.test1.executor": "Run",
+    "Python.test2 (1).executor": "Run",
+    "Python.test2.executor": "Run",
+    "Python.test3.executor": "Run",
+    "Python.test_providers_and_models.executor": "Run",
+    "Python.testopenai.executor": "Run",
+    "Python.testopenai2.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/giric/Music/3 курс 1 семестр/Python/CreatingAdAI/ProjectDirectory",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory" />
@@ -101,29 +100,7 @@
       <recent name="C:\Users\giric\Music\3 курс 1 семестр\Python\CreatingAdAI\ProjectDirectory\AdForgePackageVer2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (4)">
-    <configuration name="ad_editor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="CreatingAdAI" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/ad_editor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.main">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CreatingAdAI" />
       <option name="ENV_FILES" value="" />
@@ -138,50 +115,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdForgeUI/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="CreatingAdAI" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer2/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="CreatingAdAI" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProjectDirectory/AdForgePackageVer3/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -212,13 +145,79 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CreatingAdAI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdForgeUIv2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdForgeUIv2/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_window" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CreatingAdAI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdForgeUI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdForgeUI/main_window.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CreatingAdAI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdForgeUIv2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdForgeUIv2/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.server" />
         <item itemvalue="Python.main (4)" />
-        <item itemvalue="Python.main (2)" />
-        <item itemvalue="Python.main (3)" />
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.ad_editor" />
+        <item itemvalue="Python.main_window" />
       </list>
     </recent_temporary>
   </component>
