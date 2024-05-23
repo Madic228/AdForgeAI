@@ -1,7 +1,9 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt, QPoint
+
 from ui_loader import load_ui
 from event_handlers import v_genToggle, newGenToggle, uparrowToggle, downarrowToggle, slide_it, generationToggle
+
 
 class MyWindow(QMainWindow):
     def __init__(self):
@@ -27,9 +29,6 @@ class MyWindow(QMainWindow):
         self.e_input_dialog.hide()
         self.line_7 = self.findChild(QFrame, 'line_7')
 
-        # self.is_down = True
-        # self.droparrow_button.clicked.connect(lambda: toggle_icon_and_move(self))
-
         # Создаем QSlider
         self.slider = self.findChild(QSlider, 'slider')
         self.tempResTxt = self.findChild(QLabel, 'tempResTxt')
@@ -47,19 +46,36 @@ class MyWindow(QMainWindow):
         # Переопределение метода mousePressEvent
         self.slider.mousePressEvent = self.create_mouse_press_event(self.slider.mousePressEvent)
 
-        #Найти кнопки генерации текста и очищение полей
-        self.genBtn = self.findChild(QPushButton, 'generationBtn')
-
         # Настройка кнопок управления окном
         self.setup_button('close', self.close_window)
         self.setup_button('collapse', self.minimize_window)
 
-        # Переключения страниц
-        self.newGeneration = self.findChild(QPushButton, 'generationBtn')
-        self.newGeneration.clicked.connect(lambda: generationToggle(self))
+        #TextFields
+        self.v_headline = self.findChild(QLineEdit, 'v_headlineEdit')
+        self.v_audience = self.findChild(QLineEdit, 'v_audienceEdit')
 
-        self.newGeneration = self.findChild(QPushButton, 'v_generationBtn')
-        self.newGeneration.clicked.connect(lambda: v_genToggle(self))
+        self.headline = self.findChild(QLineEdit, 'headlineEdit')
+        self.audience = self.findChild(QLineEdit, 'audienceEdit')
+        self.action = self.findChild(QLineEdit, 'actionEdit')
+        self.length = self.findChild(QLineEdit, 'lengthEdit')
+        self.key = self.findChild(QLineEdit, 'keyEdit')
+
+        self.style = self.findChild(QComboBox, 'styleBox')
+        self.model = self.findChild(QComboBox, 'modelBox')
+        self.potok = self.findChild(QComboBox, 'potokBox')
+
+        self.result = self.findChild(QTextBrowser, 'resultText')
+        self.result.hide()
+
+        self.answer = self.findChild(QTextBrowser, 'answerText')
+        self.answer.hide()
+
+        # Переключения страниц
+        self.generation = self.findChild(QPushButton, 'generationBtn')
+        self.generation.clicked.connect(lambda: generationToggle(self))
+
+        self.v_eneration = self.findChild(QPushButton, 'v_generationBtn')
+        self.v_eneration.clicked.connect(lambda: v_genToggle(self))
 
         self.droparrow_button = self.findChild(QPushButton, 'downarrowBtn')
         self.droparrow_button.clicked.connect(lambda: downarrowToggle(self))
@@ -69,7 +85,6 @@ class MyWindow(QMainWindow):
 
         self.newGeneration = self.findChild(QPushButton, 'newGenerationBtn')
         self.newGeneration.clicked.connect(lambda: newGenToggle(self))
-
 
         # Инициализация для перетаскивания окна
         self.oldPos = self.pos()

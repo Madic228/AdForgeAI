@@ -1,7 +1,7 @@
 import asyncio
-from ad_manager import AdManager
-from ad_editor import AdEditor
-from config import proxies
+from ProjectDirectory.AdForgePackageVer3.ad_manager import AdManager
+from ProjectDirectory.AdForgePackageVer3.ad_editor import AdEditor
+from ProjectDirectory.AdForgePackageVer3.config import proxies
 
 async def main():
     ad_manager = AdManager(proxies=proxies)

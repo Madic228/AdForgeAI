@@ -1555,8 +1555,71 @@ font-size:12px;
      </property>
     </widget>
    </widget>
-   <zorder>InputDialog</zorder>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>480</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style:solid;</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>480</width>
+       <height>441</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #23252B;</string>
+     </property>
+     <widget class="QTextBrowser" name="resultText">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>330</width>
+        <height>150</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #6750A4;
+border-style: 1px solid;
+border-radius:10px;
+text-wrap:wrap;
+padding:10px;</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="answerText">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>330</width>
+        <height>150</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #5C5C5C;
+border-style: 1px solid;
+border-radius:10px;
+</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <zorder>scrollArea</zorder>
    <zorder>EditInputDialog</zorder>
+   <zorder>InputDialog</zorder>
    <zorder>line_2</zorder>
    <zorder>newGenerationBtn</zorder>
    <zorder>generationListTxt</zorder>
@@ -1723,6 +1786,118 @@ font-size:12px;
     <hint type="destinationlabel">
      <x>491</x>
      <y>686</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newGenerationBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>headlineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>773</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>607</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newGenerationBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>audienceEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>740</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>656</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newGenerationBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>keyEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>827</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>650</x>
+     <y>447</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newGenerationBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>actionEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>794</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>654</x>
+     <y>495</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newGenerationBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>lengthEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>804</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>652</x>
+     <y>580</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newGenerationBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>v_headlineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>882</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>632</x>
+     <y>694</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newGenerationBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>v_audienceEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>856</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>631</x>
+     <y>726</y>
     </hint>
    </hints>
   </connection>

@@ -1,4 +1,4 @@
-from ad_manager import AdManager
+from ProjectDirectory.AdForgePackageVer3.ad_manager import AdManager
 
 # class AdEditor:
 #     def __init__(self, ad_text, ad_manager):
@@ -75,7 +75,7 @@ from ad_manager import AdManager
 #             elif choice == 6:  # Завершение редактирования
 #                 break
 
-from ad_manager import AdManager
+from ProjectDirectory.AdForgePackageVer3.ad_manager import AdManager
 
 class AdEditor:
     def __init__(self, ad_text, ad_manager):
