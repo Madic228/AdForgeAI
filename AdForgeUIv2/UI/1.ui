@@ -1617,6 +1617,99 @@ border-radius:10px;
      </widget>
     </widget>
    </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>140</y>
+      <width>221</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <widget class="QListWidget" name="adListWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>191</width>
+       <height>181</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="viewAdButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Перейти</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="deleteAdButton">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>320</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Удалить</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="prevAdButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>220</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Предыдущее</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="nextAdButton">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>220</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Следующее</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
    <zorder>scrollArea</zorder>
    <zorder>EditInputDialog</zorder>
    <zorder>InputDialog</zorder>
@@ -1625,6 +1718,7 @@ border-radius:10px;
    <zorder>generationListTxt</zorder>
    <zorder>deleteGenBtn</zorder>
    <zorder>VisibleInputDialog</zorder>
+   <zorder>widget</zorder>
   </widget>
  </widget>
  <resources/>

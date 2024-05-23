@@ -5,6 +5,7 @@ from ui_loader import load_ui
 from event_handlers import newGenToggle, uparrowToggle, downarrowToggle, slide_it, generationToggle, v_generationToggle, edit_ad
 from PyQt5.QtWidgets import QFileDialog, QApplication, QMessageBox, QStyle
 import os
+import json
 
 
 class MyWindow(QMainWindow):
@@ -13,6 +14,9 @@ class MyWindow(QMainWindow):
         self.initUI()
 
     def initUI(self):
+
+
+
         # Загрузка UI
         self.form = load_ui(self)
         self.setWindowFlags(Qt.FramelessWindowHint)
@@ -55,6 +59,8 @@ class MyWindow(QMainWindow):
         # Инициализация кнопки для удаления истории объявлений
         self.delete_btn = self.findChild(QPushButton, 'deleteGenBtn')
         self.delete_btn.clicked.connect(self.delete_ad_data)
+
+
 
         # TextFields
         self.v_headline = self.findChild(QLineEdit, 'v_headlineEdit')
@@ -107,6 +113,24 @@ class MyWindow(QMainWindow):
         self.e_potok = self.findChild(QComboBox, 'e_potokBox')
         self.e_slider = self.findChild(QSlider, 'e_slider')
         self.e_change = self.findChild(QLineEdit, 'e_changeEdit')
+
+        # Добавление новых элементов для отображения объявлений
+        self.ad_list_widget = self.findChild(QListWidget, 'adListWidget')
+        self.view_ad_button = self.findChild(QPushButton, 'viewAdButton')
+        self.delete_ad_button = self.findChild(QPushButton, 'deleteAdButton')
+        self.prev_ad_button = self.findChild(QPushButton, 'prevAdButton')
+        self.next_ad_button = self.findChild(QPushButton, 'nextAdButton')
+
+        self.view_ad_button.clicked.connect(self.view_ad)
+        self.delete_ad_button.clicked.connect(self.delete_ad)
+        self.prev_ad_button.clicked.connect(self.prev_ad)
+        self.next_ad_button.clicked.connect(self.next_ad)
+
+        # Загрузка и отображение объявлений
+        self.ads = self.load_ads_from_json()
+        self.current_ad_index = 0
+        self.update_ad_display()
+        self.update_ad_list_widget()
 
         # Инициализация для перетаскивания окна
         self.oldPos = self.pos()
@@ -171,3 +195,55 @@ class MyWindow(QMainWindow):
             QMessageBox.information(self, "Удаление", "Файл истории объявлений успешно удален!")
         except FileNotFoundError:
             QMessageBox.warning(self, "Ошибка", "Файл истории объявлений не найден!")
+
+    def load_ads_from_json(self):
+        try:
+            with open('ad_data.json', 'r', encoding='utf-8') as file:
+                return json.load(file)
+        except FileNotFoundError:
+            return []
+
+    def update_ad_display(self):
+        if self.ads:
+            ad = self.ads[self.current_ad_index]
+            self.result.setText(f"Заголовок: {ad['headline']}\nДата последнего редактирования: {ad['creation_date']}")
+        else:
+            self.result.setText("Нет доступных объявлений.")
+
+    def update_ad_list_widget(self):
+        self.ad_list_widget.clear()
+        for ad in self.ads:
+            self.ad_list_widget.addItem(f"{ad['headline']} - {ad['creation_date']}")
+
+    def view_ad(self):
+        current_item = self.ad_list_widget.currentItem()
+        if current_item:
+            index = self.ad_list_widget.row(current_item)
+            self.current_ad_index = index
+            self.update_ad_display()
+
+    def delete_ad(self):
+        current_item = self.ad_list_widget.currentItem()
+        if current_item:
+            index = self.ad_list_widget.row(current_item)
+            del self.ads[index]
+            self.update_ad_list_widget()
+            self.save_ads_to_json()
+            if self.ads:
+                self.current_ad_index = 0
+            self.update_ad_display()
+
+    def prev_ad(self):
+        if self.current_ad_index > 0:
+            self.current_ad_index -= 1
+            self.update_ad_display()
+
+    def next_ad(self):
+        if self.current_ad_index < len(self.ads) - 1:
+            self.current_ad_index += 1
+            self.update_ad_display()
+
+    def save_ads_to_json(self):
+        with open('ad_data.json', 'w', encoding='utf-8') as file:
+            json.dump(self.ads, file, ensure_ascii=False, indent=4)
+

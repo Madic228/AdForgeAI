@@ -100,12 +100,15 @@ def edit_ad(self):
             new_ad_text = response.json().get("ad_text")
             self.answer.setText(new_ad_text)
             self.result.setText(f"Модель: {model_choice}\nПотоковая обработка: {'Вкл' if stream else 'Выкл'}\nТемпература: {temperature}")
+            logger.info("Объявление успешно отредактировано и получено от сервера")
         else:
-            QMessageBox.warning(self, "Ошибка", f"Ошибка при редактировании объявления: {response.text}")
+            error_message = response.json().get("detail", "Неизвестная ошибка")
+            raise Exception(error_message)
 
     except Exception as e:
         logger.error(f"Ошибка при редактировании объявления: {e}")
         QMessageBox.warning(self, "Ошибка", f"Произошла ошибка: {e}")
+
 
 def downarrowToggle(self):
     self.input_dialog.show()
