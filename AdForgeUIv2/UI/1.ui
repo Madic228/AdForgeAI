@@ -1976,5 +1976,37 @@ border-radius:10px;
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>newGenerationBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>e_changeEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>754</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>655</x>
+     <y>721</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>v_headlineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>269</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>437</x>
+     <y>686</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
 </ui>

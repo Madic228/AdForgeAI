@@ -1,19 +1,48 @@
-import asyncio
 import logging
+import os
+
 import requests
-from PyQt5.QtWidgets import QMessageBox
+from PyQt5.QtWidgets import QMessageBox, QFileDialog, QApplication
 
 logger = logging.getLogger('main')
 
-def slide_it(window, value):
+def slide_it(self, value):
     decimal_value = value / 10.0
-    window.tempResTxt.setText(f"{decimal_value:.1f}")
+    self.tempResTxt.setText(f"{decimal_value:.1f}")
+    self.e_tempResTxt.setText(f"{decimal_value:.1f}")
     logger.info(f"Слайдер перемещен на значение: {decimal_value:.1f}")
 
+
 def generationToggle(self):
-    # Скрываем неиспользуемые виджеты и показываем нужные
     logger.info("Кнопка 'Генерировать объявление' нажата")
 
+    # Получаем значения полей
+    headline = self.headline.text()
+    audience = self.audience.text()
+    key = self.key.text()
+    call_to_action = self.action.text()
+    style = self.style.currentText()
+    length_limit = self.length.text()
+    model_choice = self.model.currentIndex() + 1  # Индексы начинаются с 0
+    temperature = self.slider.value() / 10.0
+    stream = self.potok.currentText() == "Включить обработку"
+
+    # Проверяем, что поля headline и audience заполнены
+    if not headline or not audience:
+        logger.warning("Поля 'Заголовок' и 'Целевая аудитория' должны быть заполнены")
+        QMessageBox.warning(self, "Ошибка", "Поля 'Заголовок' и 'Целевая аудитория' должны быть заполнены")
+        return
+
+    # Если поле key не пустое, проверяем, что key можно преобразовать в целое число
+    if length_limit:
+        try:
+            length_int = int(length_limit)
+        except ValueError:
+            logger.warning("Поле 'Длина' должно быть целым числом")
+            QMessageBox.warning(self, "Ошибка", "Поле 'Длина' должно быть целым числом")
+            return
+
+    # Скрываем неиспользуемые виджеты и показываем нужные
     self.input_dialog.hide()
     self.v_input_dialog.hide()
     self.e_input_dialog.show()
@@ -21,22 +50,10 @@ def generationToggle(self):
     self.answer.show()
 
     try:
-        # Получаем значения полей
-        headline = self.headline.text()
-        audience = self.audience.text()
-
-        # Продолжаем выполнение, если оба поля заполнены
-        key_benefits = self.key.text()
-        call_to_action = self.action.text()
-        style = self.style.currentText()
-        length_limit = self.length.text()
-        model_choice = self.model.currentIndex() + 1  # Индексы начинаются с 0
-        temperature = self.slider.value() / 10.0
-        stream = self.potok.currentText() == "Включить обработку"
-
+        # Продолжаем выполнение, если оба поля заполнены и key (если есть) корректный
         # Формируем текст объявления
         combined_text = f"Заголовок: {headline}\nЦелевая аудитория: {audience}\n" \
-                        f"Преимущества: {key_benefits}\nПризыв к действию: {call_to_action}\n" \
+                        f"Призыв к действию: {call_to_action}\n" \
                         f"Стиль: {style}\nОграничение по длине: {length_limit}\n" \
                         f"Выбранная модель: {model_choice}\nТемпература: {temperature}\n" \
                         f"Потоковая обработка: {'Включена' if stream else 'Отключена'}"
@@ -44,18 +61,25 @@ def generationToggle(self):
         # Отображаем сформированный текст в окне
         self.result.setText(combined_text)
 
-        # Отправляем данные на сервер FastAPI
+        # Подготовка данных для отправки
         payload = {
             "headline": headline,
             "audience": audience,
-            "key_benefits": key_benefits,
             "call_to_action": call_to_action,
             "style": style,
-            "length_limit": int(length_limit) if length_limit else None,
             "model_choice": model_choice,
             "temperature": temperature,
             "stream": stream
         }
+
+        # Добавляем key_benefits только если поле key не пустое
+        if key:
+            payload["key_benefits"] = key
+
+        # Добавляем length_limit только если оно не пустое
+        if length_limit:
+            payload["length_limit"] = int(length_limit)
+
         logger.info("Отправка POST запроса на сервер FastAPI")
         response = requests.post("http://localhost:8000/generate_ad", json=payload)
 
@@ -71,6 +95,70 @@ def generationToggle(self):
     except Exception as e:
         logger.error(f"Ошибка: {e}")
         QMessageBox.warning(self, "Ошибка", f"Произошла ошибка: {e}")
+
+
+def v_generationToggle(self):
+    logger.info("Кнопка 'Генерировать объявление' нажата")
+
+    # Получаем значения полей
+    v_headline = self.v_headline.text()
+    v_audience = self.v_audience.text()
+    # Проверяем, что поля headline и audience заполнены
+    if not v_headline or not v_audience:
+        logger.warning("Поля 'Заголовок' и 'Целевая аудитория' должны быть заполнены")
+        QMessageBox.warning(self, "Ошибка", "Поля 'Заголовок' и 'Целевая аудитория' должны быть заполнены")
+        return
+
+    # Скрываем неиспользуемые виджеты и показываем нужные
+    self.input_dialog.hide()
+    self.v_input_dialog.hide()
+    self.e_input_dialog.show()
+    self.result.show()
+    self.answer.show()
+
+    try:
+        # Продолжаем выполнение, если оба поля заполнены
+        length_limit = self.length.text()
+        model_choice = self.model.currentIndex() + 1  # Индексы начинаются с 0
+        temperature = self.slider.value() / 10.0
+        stream = self.potok.currentText() == "Включить обработку"
+
+        # Формируем текст объявления
+        combined_text = f"Заголовок: {v_headline}\nЦелевая аудитория: {v_audience}\n" \
+                        f"Выбранная модель: {model_choice}\nТемпература: {temperature}\n" \
+                        f"Потоковая обработка: {'Включена' if stream else 'Отключена'}"
+
+        # Отображаем сформированный текст в окне
+        self.result.setText(combined_text)
+
+        # Подготовка данных для отправки
+        payload = {
+            "headline": v_headline,
+            "audience": v_audience,
+            "model_choice": model_choice,
+            "temperature": temperature,
+            "stream": stream
+        }
+        # Добавляем length_limit только если оно не пустое
+        if length_limit:
+            payload["length_limit"] = int(length_limit)
+
+        logger.info("Отправка POST запроса на сервер FastAPI")
+        response = requests.post("http://localhost:8000/generate_ad", json=payload)
+
+        # Проверяем статус ответа
+        if response.status_code == 200:
+            ad_text = response.json().get("ad_text", "")
+            self.answer.setText(ad_text)
+            logger.info("Объявление успешно сгенерировано и получено от сервера")
+        else:
+            error_message = response.json().get("detail", "Неизвестная ошибка")
+            raise Exception(error_message)
+
+    except Exception as e:
+        logger.error(f"Ошибка: {e}")
+        QMessageBox.warning(self, "Ошибка", f"Произошла ошибка: {e}")
+
 
 def edit_ad(self):
     logger.info("Кнопка 'Применить изменения' нажата")
@@ -114,12 +202,32 @@ def downarrowToggle(self):
     self.input_dialog.show()
     self.v_input_dialog.hide()
     self.e_input_dialog.hide()
+
+    # Получаем текст из первого QLineEdit
+    text = self.v_headline.text()
+    # Устанавливаем текст во второй QLineEdit
+    self.headline.setText(text)
+    # Получаем текст из первого QLineEdit
+    text = self.v_audience.text()
+    # Устанавливаем текст во второй QLineEdit
+    self.audience.setText(text)
+
     logger.info("Переход к InputDialog")
 
 def uparrowToggle(self):
     self.input_dialog.hide()
     self.v_input_dialog.show()
     self.e_input_dialog.hide()
+
+    # Получаем текст из первого QLineEdit
+    text = self.headline.text()
+    # Устанавливаем текст во второй QLineEdit
+    self.v_headline.setText(text)
+    # Получаем текст из первого QLineEdit
+    text = self.audience.text()
+    # Устанавливаем текст во второй QLineEdit
+    self.v_audience.setText(text)
+
     logger.info("Переход к VisibleInputDialog")
 
 def newGenToggle(self):
@@ -130,21 +238,38 @@ def newGenToggle(self):
     self.answer.hide()
     logger.info("Переход к новой генерации")
 
-def v_generationToggle(self):
-    self.input_dialog.hide()
-    self.v_input_dialog.hide()
-    self.e_input_dialog.show()
-    self.result.show()
-    self.answer.show()
+    self.tempResTxt.setText("0.7")
+    self.e_tempResTxt.setText("0.7")
+    self.slider.setValue(7)
+    self.e_slider.setValue(7)
 
+def save_ad_text(self):
+    options = QFileDialog.Options()
+    file_name, _ = QFileDialog.getSaveFileName(self, "Сохранить как", "объявление.txt",
+                                                "Text Files (*.txt);;Word Documents (*.docx);;PDF Files (*.pdf);;All Files (*)",
+                                                options=options)
+    if file_name:
+        with open(file_name, 'w', encoding='utf-8') as file:
+            file.write(self.answer.toPlainText())
+
+def copy_ad_text(self):
+    clipboard = QApplication.clipboard()
+    clipboard.setText(self.answer.toPlainText())
+    QMessageBox.information(self, "Копирование", "Текст успешно скопирован!")
+
+
+def clear(self):
+    self.style.setCurrentIndex(0)
+    self.model.setCurrentIndex(0)
+    self.potok.setCurrentIndex(0)
+
+    self.tempResTxt.setText("0.7")
+    self.slider.setValue(7)
+
+def delete_ad_data(self):
     try:
-        texts = [
-            self.v_headline.text(),
-            self.v_audience.text(),
-        ]
+        os.remove('ad_data.json')
+        QMessageBox.information(self, "Удаление", "Файл истории объявлений успешно удален!")
+    except FileNotFoundError:
+        QMessageBox.warning(self, "Ошибка", "Файл истории объявлений не найден!")
 
-        combined_text = '\n'.join(texts)
-        self.result.setText(combined_text)
-        logger.info("Тексты объединены и отображены")
-    except Exception as e:
-        logger.error(f"Ошибка: {e}")
