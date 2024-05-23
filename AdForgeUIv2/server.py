@@ -44,6 +44,34 @@ async def generate_ad(request: AdRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException
+import asyncio
+
+class EditRequest(BaseModel):
+    old_ad_text: str
+    edit_instructions: str
+    model_choice: int = 1
+    temperature: float = 0.7
+    stream: bool = False
+
+@app.post("/edit_ad")
+async def edit_ad(request: EditRequest):
+    try:
+        # Задаем параметры для редактора
+        ad_manager.set_advanced_params(
+            model_choice=request.model_choice,
+            temperature=request.temperature,
+            stream=request.stream
+        )
+        ad_text = await ad_manager.generate_ad_with_edit(
+            old_ad_text=request.old_ad_text,
+            edit_instructions=request.edit_instructions
+        )
+        return {"ad_text": ad_text}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)

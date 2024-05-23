@@ -2,8 +2,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt, QPoint
 
 from ui_loader import load_ui
-from event_handlers import newGenToggle, uparrowToggle, downarrowToggle, slide_it, generationToggle, v_generationToggle
-
+from event_handlers import newGenToggle, uparrowToggle, downarrowToggle, slide_it, generationToggle, v_generationToggle, edit_ad
 
 class MyWindow(QMainWindow):
     def __init__(self):
@@ -50,7 +49,7 @@ class MyWindow(QMainWindow):
         self.setup_button('close', self.close_window)
         self.setup_button('collapse', self.minimize_window)
 
-        #TextFields
+        # TextFields
         self.v_headline = self.findChild(QLineEdit, 'v_headlineEdit')
         self.v_audience = self.findChild(QLineEdit, 'v_audienceEdit')
 
@@ -86,6 +85,15 @@ class MyWindow(QMainWindow):
         self.newGeneration = self.findChild(QPushButton, 'newGenerationBtn')
         self.newGeneration.clicked.connect(lambda: newGenToggle(self))
 
+        # Добавление кнопки для редактирования и полей для редактирования
+        self.e_generation = self.findChild(QPushButton, 'e_generationBtn')
+        self.e_generation.clicked.connect(lambda: edit_ad(self))
+
+        self.e_model = self.findChild(QComboBox, 'e_modelBox')
+        self.e_potok = self.findChild(QComboBox, 'e_potokBox')
+        self.e_slider = self.findChild(QSlider, 'e_slider')
+        self.e_change = self.findChild(QLineEdit, 'e_changeEdit')
+
         # Инициализация для перетаскивания окна
         self.oldPos = self.pos()
 
@@ -114,7 +122,6 @@ class MyWindow(QMainWindow):
             if self.oldPos.y() < self.pos().y() + 50:  # Проверка, если клик произошел в верхней части окна
                 self.move(self.x() + delta.x(), self.y() + delta.y())
                 self.oldPos = event.globalPos()
-
 
     def setup_button(self, button_name, callback):
         button = self.findChild(QPushButton, button_name)
