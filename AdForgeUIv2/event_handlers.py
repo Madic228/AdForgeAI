@@ -1,4 +1,6 @@
 import logging
+import os
+
 import requests
 from PyQt5.QtWidgets import QMessageBox, QFileDialog, QApplication
 
@@ -261,4 +263,10 @@ def clear(self):
     self.tempResTxt.setText("0.7")
     self.slider.setValue(7)
 
+def delete_ad_data(self):
+    try:
+        os.remove('ad_data.json')
+        QMessageBox.information(self, "Удаление", "Файл истории объявлений успешно удален!")
+    except FileNotFoundError:
+        QMessageBox.warning(self, "Ошибка", "Файл истории объявлений не найден!")
 

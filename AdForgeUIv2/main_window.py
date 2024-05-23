@@ -1,9 +1,11 @@
+import os
+
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt, QPoint
 
 from ui_loader import load_ui
 from event_handlers import newGenToggle, uparrowToggle, downarrowToggle, slide_it, generationToggle, v_generationToggle, \
-    edit_ad, clear, save_ad_text, copy_ad_text
+    edit_ad, clear, save_ad_text, copy_ad_text, delete_ad_data
 
 
 class MyWindow(QMainWindow):
@@ -71,7 +73,7 @@ class MyWindow(QMainWindow):
 
         # Инициализация кнопки для удаления истории объявлений
         self.delete_btn = self.findChild(QPushButton, 'deleteGenBtn')
-        self.delete_btn.clicked.connect(self.delete_ad_data)
+        self.delete_btn.clicked.connect(lambda : delete_ad_data(self))
 
         # TextFields
         self.v_headline = self.findChild(QLineEdit, 'v_headlineEdit')
@@ -92,13 +94,6 @@ class MyWindow(QMainWindow):
 
         self.answer = self.findChild(QTextBrowser, 'answerText')
         self.answer.hide()
-
-        # Кнопки сохранения и копирования
-        self.save_btn = self.findChild(QPushButton, 'saveBtn')
-        self.save_btn.clicked.connect(self.save_ad_text)
-
-        self.copy_btn = self.findChild(QPushButton, 'copyBtn')
-        self.copy_btn.clicked.connect(self.copy_ad_text)
 
         # Переключения страниц
         self.generation = self.findChild(QPushButton, 'generationBtn')
@@ -173,25 +168,3 @@ class MyWindow(QMainWindow):
 
     def minimize_window(self):
         self.showMinimized()
-
-    def save_ad_text(self):
-        options = QFileDialog.Options()
-        file_name, _ = QFileDialog.getSaveFileName(self, "Сохранить как", "объявление.txt",
-                                                   "Text Files (*.txt);;Word Documents (*.docx);;PDF Files (*.pdf);;All Files (*)",
-                                                   options=options)
-        if file_name:
-            with open(file_name, 'w', encoding='utf-8') as file:
-                file.write(self.answer.toPlainText())
-
-    def copy_ad_text(self):
-        clipboard = QApplication.clipboard()
-        clipboard.setText(self.answer.toPlainText())
-        QMessageBox.information(self, "Копирование", "Текст успешно скопирован!")
-
-
-    def delete_ad_data(self):
-        try:
-            os.remove('ad_data.json')
-            QMessageBox.information(self, "Удаление", "Файл истории объявлений успешно удален!")
-        except FileNotFoundError:
-            QMessageBox.warning(self, "Ошибка", "Файл истории объявлений не найден!")
