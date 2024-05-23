@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt, QPoint
 
 from ui_loader import load_ui
-from event_handlers import v_genToggle, newGenToggle, uparrowToggle, downarrowToggle, slide_it, generationToggle
+from event_handlers import newGenToggle, uparrowToggle, downarrowToggle, slide_it, generationToggle, v_generationToggle
 
 
 class MyWindow(QMainWindow):
@@ -75,7 +75,7 @@ class MyWindow(QMainWindow):
         self.generation.clicked.connect(lambda: generationToggle(self))
 
         self.v_eneration = self.findChild(QPushButton, 'v_generationBtn')
-        self.v_eneration.clicked.connect(lambda: v_genToggle(self))
+        self.v_eneration.clicked.connect(lambda: v_generationToggle(self))
 
         self.droparrow_button = self.findChild(QPushButton, 'downarrowBtn')
         self.droparrow_button.clicked.connect(lambda: downarrowToggle(self))
