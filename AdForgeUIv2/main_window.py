@@ -114,17 +114,24 @@ class MyWindow(QMainWindow):
         self.e_slider = self.findChild(QSlider, 'e_slider')
         self.e_change = self.findChild(QLineEdit, 'e_changeEdit')
 
+        # # Добавление новых элементов для отображения объявлений
+        # self.ad_list_widget = self.findChild(QListWidget, 'adListWidget')
+        # self.view_ad_button = self.findChild(QPushButton, 'viewAdButton')
+        # self.delete_ad_button = self.findChild(QPushButton, 'deleteAdButton')
+        # self.prev_ad_button = self.findChild(QPushButton, 'prevAdButton')
+        # self.next_ad_button = self.findChild(QPushButton, 'nextAdButton')
+
         # Добавление новых элементов для отображения объявлений
         self.ad_list_widget = self.findChild(QListWidget, 'adListWidget')
         self.view_ad_button = self.findChild(QPushButton, 'viewAdButton')
         self.delete_ad_button = self.findChild(QPushButton, 'deleteAdButton')
-        self.prev_ad_button = self.findChild(QPushButton, 'prevAdButton')
-        self.next_ad_button = self.findChild(QPushButton, 'nextAdButton')
+        self.refresh_ad_button = self.findChild(QPushButton, 'refreshAdButton')  # заменить кнопку на refreshAdButton
 
         self.view_ad_button.clicked.connect(self.view_ad)
         self.delete_ad_button.clicked.connect(self.delete_ad)
-        self.prev_ad_button.clicked.connect(self.prev_ad)
-        self.next_ad_button.clicked.connect(self.next_ad)
+        # self.prev_ad_button.clicked.connect(self.prev_ad)
+        # self.next_ad_button.clicked.connect(self.next_ad)
+        self.refresh_ad_button.clicked.connect(self.refresh_ad_list)  # подключить сигнал к функции обновления
 
         # Загрузка и отображение объявлений
         self.ads = self.load_ads_from_json()
@@ -210,10 +217,14 @@ class MyWindow(QMainWindow):
         else:
             self.result.setText("Нет доступных объявлений.")
 
-    def update_ad_list_widget(self):
-        self.ad_list_widget.clear()
-        for ad in self.ads:
-            self.ad_list_widget.addItem(f"{ad['headline']} - {ad['creation_date']}")
+    def update_ad_display(self):
+        if self.ads:
+            ad = self.ads[self.current_ad_index]
+            self.result.setText(f"Заголовок: {ad['headline']}\nДата последнего редактирования: {ad['creation_date']}")
+            self.answer.setText(ad['ad_text'])  # добавлено для отображения текста объявления в answerText
+        else:
+            self.result.setText("Нет доступных объявлений.")
+            self.answer.clear()  # очистка текстового поля, если нет доступных объявлений
 
     def view_ad(self):
         current_item = self.ad_list_widget.currentItem()
@@ -221,6 +232,26 @@ class MyWindow(QMainWindow):
             index = self.ad_list_widget.row(current_item)
             self.current_ad_index = index
             self.update_ad_display()
+            # Переход в режим редактирования
+            self.input_dialog.hide()
+            self.v_input_dialog.hide()
+            self.e_input_dialog.show()
+            self.result.show()
+            self.answer.show()
+            # Заполнение полей в режиме редактирования
+            ad = self.ads[self.current_ad_index]
+            self.e_change.setText(ad['headline'])
+            # Дополнительно: можно заполнить другие поля в режиме редактирования, если необходимо
+
+    def refresh_ad_list(self):
+        self.ads = self.load_ads_from_json()
+        self.update_ad_list_widget()
+        self.update_ad_display()
+
+    def update_ad_list_widget(self):
+        self.ad_list_widget.clear()
+        for ad in self.ads:
+            self.ad_list_widget.addItem(f"{ad['headline']} - {ad['creation_date']}")
 
     def delete_ad(self):
         current_item = self.ad_list_widget.currentItem()

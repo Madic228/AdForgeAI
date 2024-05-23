@@ -1640,8 +1640,8 @@ border-radius:10px;
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>320</y>
-       <width>75</width>
+       <y>220</y>
+       <width>191</width>
        <height>23</height>
       </rect>
      </property>
@@ -1671,36 +1671,17 @@ border-radius:10px;
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="prevAdButton">
+    <widget class="QPushButton" name="refreshAdButton">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>220</y>
-       <width>75</width>
+       <y>320</y>
+       <width>71</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
-      <string>Предыдущее</string>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-     <property name="autoExclusive">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="nextAdButton">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>220</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Следующее</string>
+      <string>Обновить</string>
      </property>
      <property name="checkable">
       <bool>true</bool>
